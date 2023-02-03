@@ -2,37 +2,31 @@ import './NavBar.css';
 
 import { NavLink } from 'react-router-dom';
 import { motion as m } from 'framer-motion';
+import { container, item } from '../../util/animations';
 const NavBar = () => {
 
     return (
         <>
-        <m.div
-        initial={{ y: "100%" }}
-        animate={{ y: "0%" }}
-        transition={{ duration: 0.75 }}
-        exit={{ opacity: 1 }}
-        className='navbar'>
-            <ul>
-                <li>
+        <nav className='navbar'>
+            <m.div variants={container} initial="hidden" animate="show" className='links'>
 
-                    <NavLink
-                    exact to="/"
-                    style={{ textDecoration: 'none' }}>
-                        Home</NavLink>
-                    
-                    <NavLink
-                    to="/about"
-                    style={{ textDecoration: 'none' }}>
-                        About Me</NavLink>
+                <m.div variants={item} className='link'>
+                    <NavLink exact to="/" style={{ textDecoration: 'none' }} />
+                    Home
+                </m.div>
+                
+                <m.div variants={item} className='link'>
+                    <NavLink to="/about" style={{ textDecoration: 'none' }} />
+                    About Me
+                </m.div>
 
-                    <NavLink
-                    to="projects"
-                    style={{ textDecoration: 'none' }}>
-                        Projects</NavLink>
-
-                </li>
-            </ul>
-        </m.div>
+                <m.div variants={item} className='link'>
+                    <NavLink to="projects" style={{ textDecoration: 'none' }} />
+                    Projects
+                </m.div>
+                
+            </m.div>
+        </nav>
         </>
     )
 }

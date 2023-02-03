@@ -1,12 +1,37 @@
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: whitesmoke;
     z-index: 10000;
     position: relative;
     top: 0px;
     padding: 20px 15%;
     height: 10vh;
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
     overflow: hidden;
 }
+
+.link {
+    font-size: 25px;
+    line-height: 35px;
+    color: grey;
+    margin: 0px 15px;
+}
+
+.link:hover {
+    color: whitesmoke;
+    -webkit-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
+}
+
