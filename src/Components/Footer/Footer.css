@@ -10,16 +10,24 @@
     height: 5vh;
 }
 
-.socials {
+.social-header {
+    line-height: 25px;
+    color: grey;
+    font-weight: bold;
+    margin: 0px 20px;
+}
+
+.socials a {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
     line-height: 25px;
     color: grey;
+    text-decoration: none;
     margin: 0px 15px;
 }
 
-.socials:hover {
+.socials a:hover {
     color: whitesmoke;
     -webkit-transition: background-color 400ms linear;
     -ms-transition: background-color 400ms linear;
