@@ -29,6 +29,7 @@
 
 .socials a:hover {
     color: whitesmoke;
+    border-bottom: 1px solid whitesmoke;
     -webkit-transition: background-color 400ms linear;
     -ms-transition: background-color 400ms linear;
     transition: background-color 400ms linear;
