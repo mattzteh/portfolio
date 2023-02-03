@@ -8,7 +8,7 @@ import Projects from "./Projects";
 const AnimatedRoutes = () => {
     const location = useLocation();
     return (
-        <AnimatePresence initial={false} mode={"wait"}>
+        <AnimatePresence mode={"wait"}>
         <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />}></Route>
             <Route path="/about" element={<About />}></Route>

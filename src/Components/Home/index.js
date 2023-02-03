@@ -11,7 +11,7 @@ const Home = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5, ease: 'easeOut'}}
-            className='hero1'>
+            className='hero'>
                 Matthew Teh
             </m.div>
 
@@ -20,7 +20,7 @@ const Home = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
-            className='hero2'>
+            className='hero'>
                 Software Engineer
             </m.div>
 

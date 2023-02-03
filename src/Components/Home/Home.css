@@ -1,13 +1,15 @@
 .home {
     display: inline-block;
     justify-content: center;
-    align-items: center;
     text-align: center;
-    height: 90vh; width: 100vw;
+    position: fixed;
+    line-height: 2;
+    top: 0; bottom: 0; left: 0; right: 0;
+    width: 50%; height: 100px;
+    margin: auto;
 }
 
-.hero1, .hero2 {
-    color: whitesmoke;
-    align-items: center;
+.hero {
+    color: grey;
     font-size: 30px;
 }
