@@ -21,14 +21,14 @@
     overflow: hidden;
 }
 
-.link {
+.link nav {
     font-size: 25px;
     line-height: 35px;
     color: grey;
     margin: 0px 15px;
 }
 
-.link:hover {
+.link nav:hover {
     color: whitesmoke;
     -webkit-transition: background-color 400ms linear;
     -ms-transition: background-color 400ms linear;

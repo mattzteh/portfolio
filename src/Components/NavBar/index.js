@@ -9,22 +9,19 @@ const NavBar = () => {
         <>
         <nav className='navbar'>
             <m.div variants={container} initial="hidden" animate="show" className='links'>
-
+                
                 <m.div variants={item} className='link'>
-                    <NavLink exact to="/" style={{ textDecoration: 'none' }} />
-                    Home
+                    <NavLink exact to="/" style={{ textDecoration: 'none' }}><nav>Home</nav></NavLink>
+
                 </m.div>
                 
                 <m.div variants={item} className='link'>
-                    <NavLink to="/about" style={{ textDecoration: 'none' }} />
-                    About Me
+                    <NavLink exact to="/about" style={{ textDecoration: 'none' }}><nav>About Me</nav></NavLink> 
                 </m.div>
 
                 <m.div variants={item} className='link'>
-                    <NavLink to="projects" style={{ textDecoration: 'none' }} />
-                    Projects
+                    <NavLink exact to="/projects" style={{ textDecoration: 'none' }}><nav>Projects</nav></NavLink>
                 </m.div>
-                
             </m.div>
         </nav>
         </>
