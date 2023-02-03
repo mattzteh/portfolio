@@ -6,28 +6,33 @@ const NavBar = () => {
 
     return (
         <>
-        <nav className='navbar'>
+        <m.div
+        initial={{ y: "100%" }}
+        animate={{ y: "0%" }}
+        transition={{ duration: 0.75 }}
+        exit={{ opacity: 1 }}
+        className='navbar'>
             <ul>
                 <li>
 
-                    <NavLink 
-                    exact to="/" 
+                    <NavLink
+                    exact to="/"
                     style={{ textDecoration: 'none' }}>
                         Home</NavLink>
                     
-                    <NavLink 
-                    to="/about" 
+                    <NavLink
+                    to="/about"
                     style={{ textDecoration: 'none' }}>
                         About Me</NavLink>
 
-                    <NavLink 
-                    to="projects" 
+                    <NavLink
+                    to="projects"
                     style={{ textDecoration: 'none' }}>
                         Projects</NavLink>
 
                 </li>
             </ul>
-        </nav>
+        </m.div>
         </>
     )
 }

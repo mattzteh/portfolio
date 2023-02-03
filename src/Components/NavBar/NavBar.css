@@ -1,3 +1,12 @@
 .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    z-index: 10000;
+    position: relative;
+    top: 0px;
+    padding: 20px 15%;
     height: 10vh;
+    overflow: hidden;
 }
