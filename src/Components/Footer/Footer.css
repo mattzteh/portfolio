@@ -1,31 +1,27 @@
-.navbar {
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 10000;
-    position: relative;
-    top: 0px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
     padding: 20px 15%;
-    height: 10vh;
+    height: 5vh;
 }
 
-.links {
+.socials {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-}
-
-.link nav {
-    font-size: 25px;
-    line-height: 35px;
+    line-height: 25px;
     color: grey;
     margin: 0px 15px;
 }
 
-.link nav:hover {
+.socials:hover {
     color: whitesmoke;
     -webkit-transition: background-color 400ms linear;
     -ms-transition: background-color 400ms linear;
     transition: background-color 400ms linear;
 }
-

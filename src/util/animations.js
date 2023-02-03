@@ -9,7 +9,7 @@ export const container = {
     }
 }
 
-export const item = {
+export const fadeUp = {
     hidden: { y: '100%'},
-    show: { y: '0%', transition: {duration: 0.5}}
+    show: { y: '0%', transition: { duration: 0.5 }}
 }

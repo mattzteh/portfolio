@@ -1,0 +1,13 @@
+.home {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh; width: 100vw;
+}
+
+.hero1, .hero2 {
+    color: whitesmoke;
+    align-items: center;
+    font-size: 30px;
+}
