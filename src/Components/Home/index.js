@@ -1,33 +1,24 @@
 import './Home.css';
 
 import { motion as m } from 'framer-motion';
+import { container, fadeIn } from '../../util/animations';
 
 const Home = () => {
     return (
         <>
         <div className='home'>
 
-            <div className='home-text'>
+            <m.div variants={container} initial="hidden" animate="show" exit='exit' className='home-text'>
 
-                <m.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
-                className='hero'>
+                <m.div variants={fadeIn} className='hero'>
                     Matthew Teh
                 </m.div>
 
-                <m.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
-                className='hero'>
+                <m.div variants={fadeIn} className='hero'>
                     Software Engineer
                 </m.div>
 
-            </div>
+            </m.div>
         </div>
         </>
     )
