@@ -3,7 +3,7 @@ import { AnimatePresence } from "framer-motion";
 
 import Home from "./Home";
 import About from "./About";
-import Projects from "./Projects";
+import ProjectsIndex from "./ProjectsIndex";
 
 const AnimatedRoutes = () => {
     const location = useLocation();
@@ -12,7 +12,7 @@ const AnimatedRoutes = () => {
         <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />}></Route>
             <Route path="/about" element={<About />}></Route>
-            <Route path="/projects" element={<Projects />}></Route>
+            <Route path="/projects" element={<ProjectsIndex />}></Route>
         </Routes>
       </AnimatePresence>
     )
