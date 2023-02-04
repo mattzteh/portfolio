@@ -1,7 +1,8 @@
-import './ProjectsIndex.css';
-
+import Project from '../Projects';
 import { objVals } from '../../util/helperFunctions';
 import { projects } from '../../util/projects';
+import { motion as m } from 'framer-motion';
+import { container, fadeUp } from '../../util/animations';
 
 const ProjectsIndex = () => {
 
@@ -10,11 +11,11 @@ const ProjectsIndex = () => {
     return (
         <>
         <div className='projects'>
-            <ul>
+            <m.ul variants={container} initial="hidden" animate="show">
                 {
-                    projectsData.map(project => <li key={project.id}></li>)
+                    projectsData.map(project => <div className='project'><m.li variants={fadeUp} key={project.id}><Project project={project}/></m.li></div>)
                 }
-            </ul>
+            </m.ul>
         </div>
         </>
     )
