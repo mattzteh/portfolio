@@ -13,7 +13,12 @@ const Project = ({project}) => {
             onMouseLeave={() => setIsHover(false)}
             className='project-container'>
                 <a href={project.live} target='_blank' rel='noreferrer'><h1>{project.title}</h1></a>
-                {isHover && <div>yellow</div>}
+
+                {
+                isHover && 
+                <div className='project-hover'></div>
+                }
+
             </div>
 
         </>

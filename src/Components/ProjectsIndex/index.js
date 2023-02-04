@@ -11,9 +11,14 @@ const ProjectsIndex = () => {
     return (
         <>
         <div className='projects'>
-            <m.ul variants={container} initial="hidden" animate="show">
+            <m.ul variants={container} initial="hidden" animate="show" exit='exit'>
                 {
-                    projectsData.map(project => <div className='project'><m.li variants={fadeUp} key={project.id}><Project project={project}/></m.li></div>)
+                    projectsData.map(project =>
+                    <div className='project'>
+                        <m.li variants={fadeUp} key={project.id}>
+                            <Project project={project}/>
+                        </m.li>
+                    </div>)
                 }
             </m.ul>
         </div>

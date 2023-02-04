@@ -1,15 +1,12 @@
 .home {
-    display: inline-block;
-    justify-content: center;
+    display: grid;
+    place-items: center;
     text-align: center;
-    position: fixed;
-    line-height: 2;
-    top: 0; bottom: 0; left: 0; right: 0;
-    width: 50%; height: 100px;
-    margin: auto;
+    height: 60vh;
 }
 
 .hero {
     color: grey;
     font-size: 40px;
+    margin: 30px 0px;
 }
