@@ -22,19 +22,19 @@ const NavBar = () => {
             <m.div variants={container} initial="hidden" animate="show" className='links'>
                 
                 <m.div variants={fadeUp} className='link'>
-                    <NavLink exact to="/" style={{ textDecoration: 'none' }}>
+                    <NavLink to="/" style={{ textDecoration: 'none' }}>
                         <nav className={navBarToggle(classNames[0]) ? 'onComponent' : '' }>Home</nav>
                     </NavLink>
                 </m.div>
                 
                 <m.div variants={fadeUp} className='link'>
-                    <NavLink exact to="/about" style={{ textDecoration: 'none' }}>
+                    <NavLink to="/about" style={{ textDecoration: 'none' }}>
                         <nav className={navBarToggle(classNames[1]) ? 'onComponent' : '' }>About Me</nav>
                     </NavLink> 
                 </m.div>
 
                 <m.div variants={fadeUp} className='link'>
-                    <NavLink exact to="/projects" style={{ textDecoration: 'none' }}>
+                    <NavLink to="/projects" style={{ textDecoration: 'none' }}>
                         <nav className={navBarToggle(classNames[2]) ? 'onComponent' : '' }>Projects</nav>
                     </NavLink>
                 </m.div>
