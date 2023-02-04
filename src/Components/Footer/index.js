@@ -10,7 +10,7 @@ const Footer = () => {
         <m.div variants={container} initial="hidden" animate="show" className='links'>
 
             <m.div variants={fadeUp} className="socials">
-                <h1 className='social-header'>Contact Me:</h1>
+                <h1 className='social-header'>Connect:</h1>
             </m.div>
 
             <m.div variants={fadeUp} className="socials">

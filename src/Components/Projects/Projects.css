@@ -1,0 +1,13 @@
+.projects {
+    margin: 0% 15%;
+}
+
+.projects a {
+    text-decoration: none;
+    color: grey;
+    font-size: 25px;
+}
+
+.projects li {
+    margin: 15px 15px;
+}
