@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Router>
-        {/* <NavBar /> */}
+        <NavBar />
         <AnimatedRoutes />
         <Footer />
       </Router>
