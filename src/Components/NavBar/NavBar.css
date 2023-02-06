@@ -24,7 +24,7 @@
     padding-bottom: 1px;
 }
 
-.link nav:hover {
+.link nav:hover, .project-info a:hover {
     color: whitesmoke;
     -webkit-transition: background-color 400ms linear;
     -ms-transition: background-color 400ms linear;
