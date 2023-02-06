@@ -12,6 +12,7 @@
 .links {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     overflow: hidden;
 }
 
@@ -20,6 +21,7 @@
     line-height: 35px;
     color: grey;
     margin: 0px 15px;
+    padding-bottom: 1px;
 }
 
 .link nav:hover {
@@ -31,6 +33,5 @@
 
 .onComponent {
     border-bottom: 1px solid grey;
-    padding-bottom: 5px;
 }
 

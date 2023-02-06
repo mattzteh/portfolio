@@ -1,28 +1,51 @@
-import './Project.css';
+import './Projects.css';
+import images from '../../assets/images';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { motion as m } from 'framer-motion';
+import { container, fadeLeft } from '../../util/animations';
 
-const Project = ({project}) => {
+const ProjectsIndex = () => {
 
-    const [isHover, setIsHover] = useState(false);
+    const [width, setWidth] = useState(0);
+    const carousel = useRef();
+
+    useEffect(() => {
+        setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+    }, [])
 
     return (
         <>
-            <div
-            onMouseEnter={() => setIsHover(true)}
-            onMouseLeave={() => setIsHover(false)}
-            className='project-container'>
-                <a href={project.live} target='_blank' rel='noreferrer'><h1>{project.title}</h1></a>
-
-                {
-                isHover && 
-                <div className='project-hover'></div>
-                }
-
-            </div>
-
+        <div className='projects-container'>
+            <m.div
+            variants={container}
+            initial="hidden"
+            animate="show"
+            exit="exit"
+            ref={carousel}
+            className='projects'>
+                <m.div
+                drag="x"
+                dragConstraints={{right:0, left: -width}}
+                whileTap={{cursor:"grabbing"}}
+                className='projects-carousel'>
+                    {images.map(image => {
+                        return (
+                            <div className='project-container'>
+                            <m.div
+                            variants={fadeLeft}
+                            className='project'
+                            key={image}>
+                                <img src={image} alt="project"></img>
+                            </m.div>
+                            </div>
+                        )
+                    })}
+                </m.div>
+            </m.div>
+        </div>
         </>
     )
 }
 
-export default Project;
+export default ProjectsIndex;

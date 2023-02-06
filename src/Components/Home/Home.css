@@ -1,12 +1,24 @@
 .home {
     display: grid;
     place-items: center;
-    text-align: center;
-    height: 60vh;
+    position: relative;
+    height: 100vh;
 }
 
-.hero {
+.home img {
+    height: 200px;
+    border-radius: 50%;
+}
+
+.home-arrows {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero1, .hero2 {
     color: grey;
-    font-size: 40px;
     margin: 30px 0px;
+    font-size: 50px;
 }

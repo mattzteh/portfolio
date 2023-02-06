@@ -6,7 +6,7 @@
     position: fixed;
     bottom: 0;
     right: 0;
-    padding: 20px 15%;
+    padding: 20px 10%;
     height: 5vh;
 }
 
@@ -24,7 +24,7 @@
     line-height: 25px;
     color: grey;
     text-decoration: none;
-    margin: 0px 15px;
+    margin: 0px 10px;
 }
 
 .socials a:hover {

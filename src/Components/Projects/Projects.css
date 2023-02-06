@@ -1,0 +1,29 @@
+.projects-container {
+    margin: 0 20%;
+}
+
+.projects {
+    display: grid;
+    place-items: center;
+    cursor: grab;
+    overflow: hidden;
+}
+
+.projects-carousel {
+    display: flex;
+}
+
+.project-container {
+    overflow: hidden;
+}
+
+.project {
+    min-height: 40rem; min-width: 30rem;
+    padding: 40px;
+}
+
+.project img {
+    width: 100%; height: 100%;
+    border-radius: 2rem;
+    pointer-events: none;
+}
