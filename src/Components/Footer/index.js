@@ -7,29 +7,34 @@ const Footer = () => {
     return (
         <>
         <div className='footer'>
-        <m.div variants={container} initial="hidden" animate="show" className='links'>
+            <m.div variants={container} initial="hidden" animate="show" className='footer-links'>
 
-            <m.div variants={fadeUp} className="socials">
-                <h1 className='social-header'>Connect:</h1>
+                <m.div variants={fadeUp} className="socials">
+                    <a href='https://github.com/mattzteh' target="_blank" rel="noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </m.div>
+
+                <m.div variants={fadeUp} className="socials">
+                    <a href='https://www.linkedin.com/in/mattzteh/' target="_blank" rel="noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </m.div>
+
+                <m.div variants={fadeUp} className="socials">
+                    <a href='https://angel.co/u/matthew-teh-1' target="_blank" rel="noreferrer">
+                    <i class="fa-brands fa-angellist"></i>
+                    </a>
+                </m.div>
+
+                <m.div variants={fadeUp} className="socials">
+                    <a href='mailto: mattzteh@gmail.com'>
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </m.div>
+
+                <m.div variants={fadeUp} className='vl'></m.div>
             </m.div>
-
-            <m.div variants={fadeUp} className="socials">
-                <a href='https://github.com/mattzteh' target="_blank" rel="noreferrer">01. GitHub</a>
-            </m.div>
-
-            <m.div variants={fadeUp} className="socials">
-                <a href='https://www.linkedin.com/in/mattzteh/' target="_blank" rel="noreferrer">02. LinkedIn</a>
-            </m.div>
-
-            <m.div variants={fadeUp} className="socials">
-                <a href='https://angel.co/u/matthew-teh-1' target="_blank" rel="noreferrer">03. Angel</a>
-            </m.div>
-
-            <m.div variants={fadeUp} className="socials">
-                <a href='mailto: mattzteh@gmail.com'>04. Email</a>
-            </m.div>
-
-        </m.div>
         </div>
         </>
     )

@@ -2,7 +2,7 @@ import './Home.css';
 import profile from '../../assets/profile.png';
 
 import { motion as m } from 'framer-motion';
-import { container, fadeIn } from '../../util/animations';
+import { container, fadeIn, fadeLeft, fadeRight, fadeDown } from '../../util/animations';
 
 const Home = () => {
 
@@ -10,7 +10,15 @@ const Home = () => {
         <>
         <m.div variants={container} initial="hidden" animate="show" exit='exit' className='home'>
 
-                <img src={profile} alt="mattzteh"></img>
+            <div className='h-overflow'>
+            <m.div variants={fadeDown} className='home-content'>
+                <m.img variants={fadeIn} src={profile} alt="mattzteh"></m.img>
+                <m.div variants={container} initial="hidden" animate="show" exit='exit' className='home-hero'>
+                    <m.h1 variants={fadeLeft}>Matthew Teh</m.h1>
+                    <m.h2 variants={fadeRight}>Fullstack Software Engineer</m.h2>
+                </m.div>
+            </m.div>
+            </div>
 
         </m.div>
         </>

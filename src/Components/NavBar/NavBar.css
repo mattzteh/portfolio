@@ -21,17 +21,18 @@
     line-height: 35px;
     color: grey;
     margin: 0px 15px;
-    padding-bottom: 1px;
+    padding: 5px 10px;
+    margin-bottom: 1px;
 }
 
 .link nav:hover, .project-info a:hover {
-    color: whitesmoke;
+    color: white;
     -webkit-transition: background-color 400ms linear;
     -ms-transition: background-color 400ms linear;
     transition: background-color 400ms linear;
 }
 
 .onComponent {
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid indianred;
 }
 

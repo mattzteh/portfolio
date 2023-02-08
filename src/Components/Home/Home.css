@@ -3,10 +3,38 @@
     place-items: center;
     position: relative;
     height: 100vh;
+    color: grey;
 }
 
-.home img {
+.h-overflow {
+    overflow: hidden;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content img {
     height: 200px; width: auto;
     border-radius: 50%;
-    position: absolute;
+    margin: 10px 10px;
+}
+
+.home-hero {
+    display: block;
+    text-align: center;
+    margin: 0px 30px;
+    overflow: hidden;
+    line-height: 80px;
+}
+
+.home-hero h1 {
+    font-size: 70px;
+}
+
+.home-hero h2 {
+    font-size: 30px;
+    color:indianred;
 }

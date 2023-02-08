@@ -10,7 +10,7 @@ export const container = {
     exit: {
         transition: {
             delayChildren: 0.5,
-            staggerChildren: 0.2
+            staggerChildren: 0.2,
         }
     }
 }
@@ -19,6 +19,12 @@ export const fadeUp = {
     hidden: { y: '100%'},
     show: { y: '0%', transition: { duration: 0.5 }},
     exit: { y: '100%', transition: { duration: 0.5 }}
+}
+
+export const fadeDown = {
+    hidden: { y: '-100%'},
+    show: { y: '0%', transition: { duration: 0.5 }},
+    exit: { y: '-100%', transition: { duration: 0.5 }}
 }
 
 export const fadeIn = {
@@ -31,4 +37,10 @@ export const fadeLeft = {
     hidden: { x: '100%'},
     show: { x: '0%', transition: { duration: 0.5 }},
     exit: { x: '100%', transition: { duration: 0.5 }}
+}
+
+export const fadeRight = {
+    hidden: { x: '-100%'},
+    show: { x: '0%', transition: { duration: 0.5 }},
+    exit: { x: '-100%', transition: {duration: 0.5 }}
 }

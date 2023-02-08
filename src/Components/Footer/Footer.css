@@ -1,20 +1,13 @@
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10000;
     position: fixed;
     bottom: 0;
-    right: 0;
-    padding: 20px 10%;
+    left: 0;
+    padding: 10% 5%;
     height: 5vh;
 }
 
-.social-header {
-    line-height: 25px;
-    color: grey;
-    font-weight: bold;
-    margin: 0px 20px;
+.footer-links {
+    display: inline-block;
 }
 
 .socials a {
@@ -24,12 +17,20 @@
     line-height: 25px;
     color: grey;
     text-decoration: none;
-    margin: 0px 10px;
+    margin: 20px 10px;
 }
 
+.socials i {
+    font-size: 20px;
+}
+
+.vl {
+    border-left: 6px solid indianred;
+    height: 500px;
+  }
+
 .socials a:hover {
-    color: whitesmoke;
-    border-bottom: 1px solid whitesmoke;
+    color: indianred;
     -webkit-transition: background-color 400ms linear;
     -ms-transition: background-color 400ms linear;
     transition: background-color 400ms linear;
