@@ -1,13 +1,10 @@
 .footer {
     position: fixed;
     bottom: 0; left: 0;
-    margin: 0% 5%;
+    margin: 0 5%;
 }
 
-.socials a {
-    display: flex;
-    color: grey;
-    text-decoration: none;
+.socials {
     margin: 20px 0px;
 }
 
@@ -16,11 +13,10 @@
 }
 
 .vl {
-    border-left: 1px solid indianred;
-    height: 25%;
-    position: absolute;
-    left: 50%; bottom: 0;
-    margin-left: -1px;
+    border-left: 3px solid indianred;
+    min-height: 200px;
+    position: fixed;
+    left: 4%; bottom: 0;
 }
 
 .socials a:hover {
@@ -28,4 +24,10 @@
     -webkit-transition: color 400ms linear;
     -ms-transition: color 400ms linear;
     transition: color 400ms linear;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        display: none;
+    }
 }
