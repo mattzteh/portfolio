@@ -13,7 +13,7 @@
 }
 
 .link nav:hover, .project-info a:hover {
-    color: white;
+    color: indianred;
     -webkit-transition: color 200ms linear;
     -ms-transition: color 200ms linear;
     transition: color 200ms linear;

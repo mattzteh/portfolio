@@ -31,7 +31,7 @@ const NavBar = () => {
         backgroundColor: '#141414',
         padding: '15px 5%',
         boxShadow: '0 1px 2px 0 rgba(0,0,0,.2)',
-        transition: 'top 0.2s'
+        transition: 'top 0.4s'
     }
 
     return (
