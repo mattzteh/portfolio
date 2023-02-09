@@ -29,10 +29,9 @@ const NavBar = () => {
         position: 'sticky',
         top: 0,
         backgroundColor: '#141414',
-        paddingTop: '15px',
-        paddingLeft: '5%',
-        paddingRight: '5%',
-        transition: 'top 0.6s'
+        padding: '15px 5%',
+        boxShadow: '0 1px 2px 0 rgba(0,0,0,.2)',
+        transition: 'top 0.2s'
     }
 
     return (
