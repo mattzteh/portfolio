@@ -4,8 +4,8 @@
     z-index: 10000;
     position: fixed;
     top: 0;
-    min-width: 100vw;
     background-color: #141414;
+    margin: 15px 5%;
 }
 
 .links {
@@ -13,12 +13,10 @@
     justify-content: flex-start;
     align-items: center;
     overflow: hidden;
-    margin: 10px 5%;
-    width: 100%;
 }
 
 .link {
-    padding: 10px;
+    padding: 5px 15px;
 }
 
 .link nav {
