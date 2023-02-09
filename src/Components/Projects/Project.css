@@ -1,0 +1,50 @@
+.projects {
+    margin-top: 50px;
+    padding-bottom: 10%;
+}
+
+.projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects ul li {
+    flex-basis: 15%;
+    flex-direction: column;
+}
+
+
+.project {
+    background-color: #0f0f0f;
+    margin: 10px 10px;
+    text-align: left;
+    padding: 30px 30px;
+    border-radius: 3px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    height: 15%;
+}
+
+.project-links a {
+    color: grey;
+    font-size: 20px;
+}
+
+.project-title {
+    font-size: 20px;
+    height: 20%;
+}
+
+.project-description {
+    height: 60%;
+}
+
+.project-stack {
+    font-style: italic;
+    position: absolute;
+    height: 5%;
+}

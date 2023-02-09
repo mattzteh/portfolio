@@ -1,20 +1,11 @@
 .footer {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    padding: 10% 5%;
-    height: 5vh;
-}
-
-.footer-links {
-    display: inline-block;
+    bottom: 0; left: 0;
+    margin: 0% 5%;
 }
 
 .socials a {
     display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-    line-height: 25px;
     color: grey;
     text-decoration: none;
     margin: 20px 0px;
@@ -25,12 +16,11 @@
 }
 
 .vl {
-    border-left: 2px solid indianred;
-    height: 10%;
+    border-left: 1px solid indianred;
+    height: 25%;
     position: absolute;
-    left: 50%;
-    margin-left: -3px;
-    bottom: 0;
+    left: 50%; bottom: 0;
+    margin-left: -1px;
 }
 
 .socials a:hover {

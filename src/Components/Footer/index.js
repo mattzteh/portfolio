@@ -8,6 +8,7 @@ const Footer = () => {
         <>
         <div className='footer'>
             <m.div variants={container} initial="hidden" animate="show" className='footer-links'>
+                <m.div variants={fadeUp} className='vl'></m.div>
 
                 <m.div variants={fadeIn} className="socials">
                     <a href='https://github.com/mattzteh' target="_blank" rel="noreferrer">
@@ -33,7 +34,6 @@ const Footer = () => {
                     </a>
                 </m.div>
 
-                <m.div variants={fadeUp} className='vl'></m.div>
             </m.div>
         </div>
         </>

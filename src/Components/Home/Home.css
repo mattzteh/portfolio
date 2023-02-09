@@ -3,7 +3,7 @@
     place-items: center;
     position: relative;
     color: grey;
-    height: 95vh;
+    height: 95vh; width: 100%;
 }
 
 .h-overflow {
@@ -19,7 +19,6 @@
 .home-content img {
     height: 200px; width: auto;
     border-radius: 50%;
-    margin: 10px 10px;
 }
 
 .home-hero {

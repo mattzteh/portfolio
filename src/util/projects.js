@@ -10,26 +10,26 @@ const projects = {
     'zzyWorks': {
         'id': 1,
         'title':'ZZY Works',
-        'stack': ['Ruby on Rails', 'JavaScript', 'React.js', 'Redux.js', 'AWS S3', 'AWS IAM', 'PostgreSQL'],
+        'stack': 'Rails, React, AWS',
         'live': 'https://zzyworks.herokuapp.com/',
         'github': 'https://github.com/mattzteh/ZZY-WORKS',
-        'description': ''
+        'description': 'An eCommerce website clone of RAMA WORKS. Full CRUD features (users, cart, reviews)'
     },
     'dinoTyper': {
         'id': 2,
-        'title': 'Dino Typer',
-        'stack': ['JavaScript, jQuery'],
+        'title': 'DinoTyper',
+        'stack': 'JavaScript, jQuery',
         'live': 'https://mattzteh.github.io/DinoTyper/',
         'github': 'https://github.com/mattzteh/DinoTyper',
-        'description': ''
+        'description': "Test your typing skills against a hungry dinosaur. Don't get eaten!"
     },
     'gameBuddy': {
         'id': 3,
         'title': 'GameBuddy',
-        'stack': ['MongoDB', 'Express.js', 'React.js', 'Next.js'],
+        'stack': 'M.E.R.N',
         'live': 'https://gamebuddy-app.herokuapp.com/',
         'github': 'https://github.com/killacan/gameBuddy',
-        'description': ''
+        'description': 'Connect with friends and strangers and play games together.'
     }
 }
 

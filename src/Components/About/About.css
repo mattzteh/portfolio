@@ -3,6 +3,7 @@
     place-items: center;
     position: relative;
     color: grey;
+    overflow: hidden;
 }
 
 .about-content {
@@ -11,10 +12,16 @@
 }
 
 .about-content h1 {
-    font-size: 35px;
+    font-size: 45px;
     font-weight: bold;
 }
 
 .about-content h2 {
     font-size: 30px;
+}
+
+.about-content ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
 }

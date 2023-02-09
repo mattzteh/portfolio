@@ -14,13 +14,13 @@ const About = () => {
     className="comp-container">
       <div className='about-content'>
         <h1>About Me</h1>
-        <p>Welcome to my website! My name is Matt. I have a passion for Web Development 
+        <p>Welcome to my website! My name is Matthew. I have a passion for Web Development 
           and love creating and designing websites. I started my journey as a Software 
           Engineer back in 2022, when I decided to make a career change from Business/Finance. 
-          Since writing my first program of "Hello World", I have truly rediscovered my love 
-          for learning and am hungry to always learn more and build my skillsets. I am 
+          From coding my first "Hello World" program, all the way to creating a website, I have truly rediscovered my love 
+          for learning and am hungry to always learn more and build my skillset. I am 
           currently looking for opportunities to showcase my skills and be a part of a team
-          that works on meaningful and beautiful projects!
+          that works on meaningful projects!
         </p>
         <h2>My Skills:</h2>
         <ul>

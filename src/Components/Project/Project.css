@@ -1,9 +1,0 @@
-.projects {
-    display: grid;
-    place-items: center;
-    color: grey;
-}
-
-.projects h1 {
-    font-size: 30px;
-}

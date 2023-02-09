@@ -3,7 +3,7 @@ import { AnimatePresence } from "framer-motion";
 
 import Home from "./Home";
 import About from "./About";
-import ProjectsIndex from "./ProjectsIndex";
+import ProjectsIndex from "./Projects";
 
 const AnimatedRoutes = () => {
     const location = useLocation();
