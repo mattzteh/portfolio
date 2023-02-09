@@ -1,0 +1,20 @@
+.about {
+    display: grid;
+    place-items: center;
+    position: relative;
+    color: grey;
+}
+
+.about-content {
+    width: 50%;
+    line-height: 40px;
+}
+
+.about-content h1 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.about-content h2 {
+    font-size: 30px;
+}

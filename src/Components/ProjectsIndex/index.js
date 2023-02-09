@@ -1,40 +1,25 @@
 import Project from '../Project';
 import projectsData from '../../util/projects.js';
 
-import { useEffect, useRef, useState } from 'react';
 import { motion as m } from 'framer-motion';
 import { container, fadeIn } from '../../util/animations';
 
 const ProjectsIndex = () => {
 
-    const [width, setWidth] = useState(0);
-    const carousel = useRef();
-
-    useEffect(() => {
-        setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-    }, []);
-
     return (
         <>
-        <div className='projects-container'>
-            <m.div variants={container} initial="hidden" animate="show" exit="exit"
-            ref={carousel} className='projects'>
-
-                <m.div drag="x" dragConstraints={{right:0, left: -width}} whileTap={{cursor:"grabbing"}}
-                className='projects-carousel'>
-
+            <m.div variants={container} initial="hidden" animate="show" exit="exit" className='comp-container'>
+                <m.h1 variants={fadeIn}>Projects</m.h1>
+                <m.div>
                     {projectsData.map(project => {
                         return (
-
-                                <m.div variants={fadeIn}>
+                                <m.div variants={fadeIn} className='project'>
                                     <Project project={project}></Project>
                                 </m.div>
-
                         )
                     })}
                 </m.div>
             </m.div>
-        </div>
         </>
     )
 }

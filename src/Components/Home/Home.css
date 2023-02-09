@@ -1,9 +1,9 @@
-.home {
+.comp-container {
     display: grid;
     place-items: center;
     position: relative;
-    height: 100vh;
     color: grey;
+    height: 95vh;
 }
 
 .h-overflow {

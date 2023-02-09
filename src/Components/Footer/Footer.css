@@ -17,7 +17,7 @@
     line-height: 25px;
     color: grey;
     text-decoration: none;
-    margin: 20px 10px;
+    margin: 20px 0px;
 }
 
 .socials i {
@@ -25,13 +25,17 @@
 }
 
 .vl {
-    border-left: 6px solid indianred;
-    height: 500px;
-  }
+    border-left: 2px solid indianred;
+    height: 10%;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    bottom: 0;
+}
 
 .socials a:hover {
     color: indianred;
-    -webkit-transition: background-color 400ms linear;
-    -ms-transition: background-color 400ms linear;
-    transition: background-color 400ms linear;
+    -webkit-transition: color 400ms linear;
+    -ms-transition: color 400ms linear;
+    transition: color 400ms linear;
 }

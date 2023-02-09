@@ -1,20 +1,9 @@
 import './NavBar.css';
 
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { motion as m } from 'framer-motion';
 import { container, fadeUp } from '../../util/animations';
 const NavBar = () => {
-
-    const classNames = ['/', '/about', '/projects'];
-
-    const location = useLocation();
-    const navBarToggle = (className) => {
-        if (location.pathname === className) {
-            return true;
-        } else {
-            return false;
-        }
-    }
 
     return (
         <>
@@ -23,19 +12,19 @@ const NavBar = () => {
                 
                 <m.div variants={fadeUp} className='link'>
                     <NavLink to="/" style={{ textDecoration: 'none' }}>
-                        <nav className={navBarToggle(classNames[0]) ? 'onComponent' : '' }>Home</nav>
+                        <nav>Home</nav>
                     </NavLink>
                 </m.div>
                 
                 <m.div variants={fadeUp} className='link'>
                     <NavLink to="/about" style={{ textDecoration: 'none' }}>
-                        <nav className={navBarToggle(classNames[1]) ? 'onComponent' : '' }>About Me</nav>
+                        <nav>About Me</nav>
                     </NavLink> 
                 </m.div>
 
                 <m.div variants={fadeUp} className='link'>
                     <NavLink to="/projects" style={{ textDecoration: 'none' }}>
-                        <nav className={navBarToggle(classNames[2]) ? 'onComponent' : '' }>Projects</nav>
+                        <nav>Projects</nav>
                     </NavLink>
                 </m.div>
             </m.div>
