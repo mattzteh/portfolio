@@ -7,15 +7,17 @@ const NavBar = () => {
 
     return (
         <>
-        <nav className='navbar'>
-            <m.div variants={container} initial="hidden" animate="show" className='links'>
-                
+        <m.nav variants={container} initial="hidden" animate="show" className='navbar'>
+
+            <m.div className='home-link'>
                 <m.div variants={fadeUp} className='link'>
                     <NavLink to="/" style={{ textDecoration: 'none' }}>
-                        <nav>Home</nav>
+                        <nav><i class="fa-solid fa-m"></i><i class="fa-solid fa-t"></i></nav>
                     </NavLink>
                 </m.div>
+            </m.div>
                 
+            <div className='links'>
                 <m.div variants={fadeUp} className='link'>
                     <NavLink to="/about" style={{ textDecoration: 'none' }}>
                         <nav>About</nav>
@@ -27,8 +29,8 @@ const NavBar = () => {
                         <nav>Projects</nav>
                     </NavLink>
                 </m.div>
-            </m.div>
-        </nav>
+            </div>
+        </m.nav>
         </>
     )
 }
