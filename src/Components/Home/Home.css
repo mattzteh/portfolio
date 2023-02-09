@@ -3,14 +3,7 @@
     place-items: center;
     position: relative;
     color: grey;
-    height: 95vh; width: 100%;
-}
-
-.home {
-    display: grid;
-    place-items: center;
-    position: relative;
-    color: grey;
+    min-height: 100vh;
 }
 
 .h-overflow {
@@ -49,6 +42,15 @@
     .home-content {
         display: block;
         text-align: center;
+    }
+    .home-hero {
+        line-height: 30px;
+    }
+    .home-hero h1 {
+        font-size: 30px;
+    }
+    .home-hero h2 {
+        font-size: 15px;
     }
 }
 
