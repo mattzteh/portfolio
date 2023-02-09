@@ -1,19 +1,15 @@
-.about {
-    display: grid;
-    place-items: center;
-    position: relative;
-    color: grey;
-    overflow: hidden;
-}
-
 .about-content {
-    width: 50%;
+    max-width: 50ch;
     line-height: 40px;
 }
 
 .about-content h1 {
-    font-size: 45px;
+    font-size: 30px;
     font-weight: bold;
+}
+
+.about-content div {
+    border-top: 1px solid indianred;
 }
 
 .about-content h2 {

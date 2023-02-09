@@ -3,7 +3,7 @@ import './About.css';
 import { motion as m } from 'framer-motion';
 
 const About = () => {
-  
+
     return (
     <>
     <m.div
@@ -14,26 +14,26 @@ const About = () => {
     className="comp-container">
       <div className='about-content'>
         <h1>About Me</h1>
-        <p>Welcome to my website! My name is Matthew. I have a passion for Web Development 
-          and love creating and designing websites. I started my journey as a Software 
-          Engineer back in 2022, when I decided to make a career change from Business/Finance. 
-          From coding my first "Hello World" program, all the way to creating a website, I have truly rediscovered my love 
-          for learning and am hungry to always learn more and build my skillset. I am 
-          currently looking for opportunities to showcase my skills and be a part of a team
-          that works on meaningful projects!
+        <p>
+          "Welcome to my website! My name is Matthew. I have a passion for Web Development and love 
+          creating and designing websites. I started my journey as a Software Engineer back in 2022, 
+          when I decided to make a career change from Business/Finance. From coding my first Hello 
+          World program, all the way to creating a website, I have truly rediscovered my love for 
+          learning and am hungry to always learn more and build my skillset. I am currently looking 
+          for opportunities to showcase my skills and be a part of a team that works on meaningful projects!"
         </p>
         <h2>My Skills:</h2>
         <ul>
-          <li><i class="fa-solid fa-angle-right"></i>JavaScript</li>
-          <li><i class="fa-solid fa-angle-right"></i>Python</li>
-          <li><i class="fa-solid fa-angle-right"></i>Ruby</li>
-          <li><i class="fa-solid fa-angle-right"></i>Ruby on Rails</li>
-          <li><i class="fa-solid fa-angle-right"></i>React.js</li>
-          <li><i class="fa-solid fa-angle-right"></i>Node.js</li>
-          <li><i class="fa-solid fa-angle-right"></i>Express.js</li>
-          <li><i class="fa-solid fa-angle-right"></i>MongoDB</li>
-          <li><i class="fa-solid fa-angle-right"></i>SQL</li>
-          <li><i class="fa-solid fa-angle-right"></i>HTML/CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>Ruby</li>
+          <li>Ruby on Rails</li>
+          <li>React.js</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>MongoDB</li>
+          <li>SQL</li>
+          <li>HTML/CSS</li>
         </ul>
       </div>  
     </m.div>
