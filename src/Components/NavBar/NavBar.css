@@ -1,29 +1,29 @@
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     z-index: 10000;
-    position: relative;
+    position: fixed;
     top: 0;
-    width: 100%;
+    min-width: 100vw;
     background-color: #141414;
 }
 
 .links {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     overflow: hidden;
     margin: 10px 5%;
+    width: 100%;
+}
+
+.link {
+    padding: 10px;
 }
 
 .link nav {
-    font-size: 23px;
-    line-height: 35px;
+    font-size: clamp(15px, 20px, 25px);
     color: grey;
-    margin: 0px 15px;
-    padding: 5px 10px;
-    margin-bottom: 1px;
 }
 
 .link nav:hover, .project-info a:hover {
@@ -31,9 +31,5 @@
     -webkit-transition: color 200ms linear;
     -ms-transition: color 200ms linear;
     transition: color 200ms linear;
-}
-
-.onComponent {
-    border-bottom: 1px solid indianred;
 }
 

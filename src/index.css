@@ -65,20 +65,20 @@ a {
 /* width */
 ::-webkit-scrollbar {
 	width: 7px;
-  }
+}
   
   /* Track */
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
 	background: transparent;
-  }
+}
   
   /* Handle */
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
 	background: #888;
 	border-radius: 10px;
-  }
+}
   
   /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
 	background: #555;
-  }
+}

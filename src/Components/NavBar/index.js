@@ -18,7 +18,7 @@ const NavBar = () => {
                 
                 <m.div variants={fadeUp} className='link'>
                     <NavLink to="/about" style={{ textDecoration: 'none' }}>
-                        <nav>About Me</nav>
+                        <nav>About</nav>
                     </NavLink> 
                 </m.div>
 
