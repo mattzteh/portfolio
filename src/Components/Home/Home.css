@@ -6,6 +6,13 @@
     height: 95vh; width: 100%;
 }
 
+.home {
+    display: grid;
+    place-items: center;
+    position: relative;
+    color: grey;
+}
+
 .h-overflow {
     overflow: hidden;
 }
@@ -17,7 +24,7 @@
 }
 
 .home-content img {
-    height: 200px; width: auto;
+    max-height: 200px; width: auto;
     border-radius: 50%;
 }
 
@@ -36,4 +43,15 @@
 .home-hero h2 {
     font-size: 30px;
     color:indianred;
+}
+
+@media (max-width: 900px) {
+    .home-content {
+        display: block;
+        text-align: center;
+    }
+}
+
+* {
+    box-sizing: border-box;
 }

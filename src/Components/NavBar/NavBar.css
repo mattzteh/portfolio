@@ -2,11 +2,10 @@
     display: flex;
     align-items: center;
     z-index: 10000;
-    position: fixed;
+    position: sticky;
     top: 0;
     background-color: #141414;
     padding: 15px 5%;
-    min-width: 100vw;
 }
 
 .links {
