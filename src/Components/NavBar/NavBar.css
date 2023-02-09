@@ -5,7 +5,8 @@
     position: fixed;
     top: 0;
     background-color: #141414;
-    margin: 15px 5%;
+    padding: 15px 5%;
+    min-width: 100vw;
 }
 
 .links {
