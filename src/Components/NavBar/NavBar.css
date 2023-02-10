@@ -1,3 +1,17 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    position: sticky;
+    top: 0;
+    background-color: #141414;
+    padding: 15px 5%;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    transition: top 0.4s;
+}
+
+
 .home-link, .links {
     display: flex;
     overflow: hidden;

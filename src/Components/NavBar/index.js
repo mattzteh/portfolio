@@ -21,24 +21,10 @@ const NavBar = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, [prevScrollPos, isVisible, handleScroll]);
-  
-    const navbarStyles = {
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        zIndex: 10000,
-        position: 'sticky',
-        top: 0,
-        backgroundColor: '#141414',
-        padding: '15px 5%',
-        boxShadow: '0 1px 2px 0 rgba(0,0,0,.2)',
-        transition: 'top 0.4s'
-    }
-
 
     return (
         <>
-        <m.nav variants={container} initial="hidden" animate="show" className='navbar' style={{ ...navbarStyles, top: isVisible ? '0' : '-60px' }}>
+        <m.nav variants={container} initial="hidden" animate="show" className='navbar' style={{top: isVisible ? '0' : '-60px' }}>
 
             <m.div className='home-link'>
                 <m.div variants={fadeUp} className='link'>
