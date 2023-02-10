@@ -20,14 +20,14 @@ export const homeAnimation = {
     show: { 
         opacity: 1,
         transition: {
-            delayChildren: 1,
-            staggerChildren: 0.2,
+            delayChildren: 1.5,
+            staggerChildren: 0.1,
         }
     },
     exit: {
         transition: {
-            delayChildren: 1,
-            staggerChildren: 0.2,
+            delayChildren: 1.5,
+            staggerChildren: 0.1,
         }
     }
 }
@@ -37,7 +37,7 @@ export const footerAnimation = {
     show: { 
         opacity: 1,
         transition: {
-            delayChildren: 1.5,
+            delayChildren: 2,
             staggerChildren: 0.2,
         }
     },

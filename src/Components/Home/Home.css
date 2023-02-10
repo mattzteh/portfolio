@@ -30,6 +30,10 @@
 }
 
 .home-hero h1 {
+    overflow: hidden;
+}
+
+.home-hero h1 {
     font-size: 70px;
 }
 
