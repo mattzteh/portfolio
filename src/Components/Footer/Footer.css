@@ -9,11 +9,11 @@
 }
 
 .socials i {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .vl {
-    border-left: 3px solid indianred;
+    border-left: 1px solid indianred;
     min-height: 200px;
     position: fixed;
     left: 4%; bottom: 0;

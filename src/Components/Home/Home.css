@@ -24,7 +24,7 @@
 .home-hero {
     display: block;
     text-align: center;
-    margin: 0px 30px;
+    margin: 0px 45px;
     overflow: hidden;
     line-height: 80px;
 }
@@ -45,6 +45,7 @@
     }
     .home-hero {
         line-height: 30px;
+        margin: 15px 0px;
     }
     .home-hero h1 {
         font-size: 30px;

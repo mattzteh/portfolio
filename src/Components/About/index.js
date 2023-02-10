@@ -11,7 +11,7 @@ const About = () => {
     <>
     <div className="comp-container">
 		<div className='about'>
-    		<m.h1>About Me</m.h1>
+    		<m.h1>About Me </m.h1>
         	<div className='about-content'>
           		<div className='about-text'>
 					<m.p>{aboutText[0]}</m.p>

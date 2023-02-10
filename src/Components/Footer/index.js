@@ -17,7 +17,7 @@ const Footer = () => {
 
                 <m.div variants={fadeIn} className="socials">
                     <a href='https://www.linkedin.com/in/mattzteh/' target="_blank" rel="noreferrer">
-                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                 </m.div>
 
