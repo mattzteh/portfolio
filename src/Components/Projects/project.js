@@ -3,23 +3,22 @@ import './Project.css';
 
 const Project = ({project}) => {
 
-    const [isHovered, setIsHovered] = useState(false);
 
     return (
         <>
-        <div
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        className='project'>
-            <div className='project-info'>
-                <div className='project-title'>{isHovered ? " " : project.title }</div>
-                {/* <div className='project-links'>
-                    <a href={project.live} target="_blank" rel="noreferrer">Live</a>
-                    <a href={project.github} target="_blank" rel="noreferrer">Github</a>
-                </div>
-                <div className='project-description'>{project.description}</div>
-                <div className='project-stack'>{project.stack}</div> */}
-            </div>
+        <div className='project'>
+            <div className='project-title'>{project.title}</div>
+                {
+                    // isHovered &&
+                    // <div className='project-info'>
+                    //     <div className='project-links'>
+                    //         <a href={project.live} target="_blank" rel="noreferrer">Live</a>
+                    //         <a href={project.github} target="_blank" rel="noreferrer">Github</a>
+                    //     </div>
+                    //     <div className='project-description'>{project.description}</div>
+                    //     <div className='project-stack'>{project.stack}</div>
+                    // </div>
+                }
 
 
         </div>

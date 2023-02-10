@@ -17,10 +17,22 @@
     width: 300px; height: 300px;
     margin: 10px 10px;
     background-color: #191919;
+    border-radius: 3px;
 }
 
 .project-title {
     font-size: 1.5rem;
+}
+
+.project-info {
+    display: block;
+    padding: 15px;
+    height: 100%;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
 }
 
 @media (max-width: 900px) {
