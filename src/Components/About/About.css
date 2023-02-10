@@ -9,13 +9,17 @@
     line-height: 30px;
 }
 
-.about-content p, .about-content img {
+.about-content * {
     max-width: 50ch;
     font-size: 13px;
 }
 
+.about-content p {
+    margin-bottom: 15px;
+}
+
 .about-content img {
-    max-height: 300px; width: auto;
+    max-height: 250px; width: auto;
     border-radius: 3px;
     margin: 10px 10px;
 }
