@@ -10,14 +10,10 @@ const ProjectsIndex = () => {
         <>
         <div className='comp-container'>
             <div className='projects'>
-                <h1 className='projects-header'>Projects</h1>
-                <ul>
-                    {
-                        projectsData.map(project => 
-                            <li key={project.id}><Project project={project}/></li>
-                            )
-                        }
-                </ul>
+                <h1 className='projects-header'>My Projects</h1>
+                <div className='projects-container'>
+                        {projectsData.map(project => <div key={project.id}><Project project={project}/></div>)}
+                </div>
             </div>
         </div>
         </>
