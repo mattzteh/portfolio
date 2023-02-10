@@ -4,7 +4,7 @@ import About from '../About';
 import ProjectsIndex from '../Projects';
 
 import { motion as m } from 'framer-motion';
-import { container, fadeIn, fadeLeft, fadeRight, fadeDown } from '../../util/animations';
+import { container, fadeIn, fadeLeft, fadeRight } from '../../util/animations';
 
 const Home = () => {
 
