@@ -2,7 +2,7 @@ import './NavBar.css';
 
 import { useState, useEffect } from 'react';
 import { motion as m } from 'framer-motion';
-import { container, fadeUp } from '../../util/animations';
+import { navBarAnimation, fadeUp } from '../../util/animations';
 import { debounce } from '../../util/debounce';
 import { Link } from 'react-scroll';
 
@@ -24,7 +24,7 @@ const NavBar = () => {
 
     return (
         <>
-        <m.nav variants={container} initial="hidden" animate="show" className='navbar' style={{top: isVisible ? '0' : '-60px' }}>
+        <m.nav variants={navBarAnimation} initial="hidden" animate="show" className='navbar' style={{top: isVisible ? '0' : '-60px' }}>
 
             <m.div className='home-link'>
                 <m.div variants={fadeUp} className='link'>

@@ -1,13 +1,13 @@
 import './Footer.css';
 
 import { motion as m } from 'framer-motion';
-import { container, fadeIn, fadeUp } from '../../util/animations';
+import { footerAnimation, fadeIn, fadeUp } from '../../util/animations';
 
 const Footer = () => {
     return (
         <>
         <div className='footer'>
-            <m.ul variants={container} initial="hidden" animate="show" className='footer-links'>
+            <m.ul variants={footerAnimation} initial="hidden" animate="show" className='footer-links'>
 
                 <m.li variants={fadeIn} className="socials">
                     <a href='https://github.com/mattzteh' target="_blank" rel="noreferrer">
