@@ -10,7 +10,7 @@ const Home = () => {
 
     return (
         <>
-        <m.div variants={container} initial="hidden" animate="show" exit='exit' className='comp-container'>
+        <m.div variants={container} initial="hidden" animate="show" exit='exit' className='comp-container' id="/">
             <div className='h-overflow'>
                 <div className='home-content'>
                     <m.img variants={fadeIn} src={profile} alt="mattzteh"></m.img>
@@ -22,10 +22,10 @@ const Home = () => {
             </div>
         </m.div>
 
-        <div>
+        <div id="/about">
             <About />
         </div>
-        <div>
+        <div id="/projects">
             <ProjectsIndex />
         </div>
         </>

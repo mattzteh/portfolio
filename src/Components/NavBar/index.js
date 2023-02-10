@@ -1,10 +1,11 @@
 import './NavBar.css';
 
 import { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
 import { motion as m } from 'framer-motion';
 import { container, fadeUp } from '../../util/animations';
 import { debounce } from '../../util/debounce';
+import { Link } from 'react-scroll';
+
 const NavBar = () => {
 
     const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -34,29 +35,30 @@ const NavBar = () => {
         transition: 'top 0.4s'
     }
 
+
     return (
         <>
         <m.nav variants={container} initial="hidden" animate="show" className='navbar' style={{ ...navbarStyles, top: isVisible ? '0' : '-60px' }}>
 
             <m.div className='home-link'>
                 <m.div variants={fadeUp} className='link'>
-                    <NavLink to="/" style={{ textDecoration: 'none' }}>
+                    <Link to="/" spy={true} smooth={true} offset={-100} duration={200}>
                         <nav><i class="fa-solid fa-m"></i><i class="fa-solid fa-t"></i></nav>
-                    </NavLink>
+                    </Link>
                 </m.div>
             </m.div>
                 
             <div className='links'>
                 <m.div variants={fadeUp} className='link'>
-                    <NavLink to="/about" style={{ textDecoration: 'none' }}>
+                    <Link to="/about" spy={true} smooth={true} offset={50} duration={200}>
                         <nav>About</nav>
-                    </NavLink> 
+                    </Link> 
                 </m.div>
 
                 <m.div variants={fadeUp} className='link'>
-                    <NavLink to="/projects" style={{ textDecoration: 'none' }}>
+                    <Link to="/projects" spy={true} smooth={true} offset={50} duration={200}>
                         <nav>Projects</nav>
-                    </NavLink>
+                    </Link>
                 </m.div>
             </div>
         </m.nav>
