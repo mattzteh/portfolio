@@ -22,14 +22,13 @@
 }
 
 .link nav {
-    font-size: 18px;
+    font-size: 1rem;
     color: grey;
 }
 
 .link nav:hover, .project-info a:hover {
-    color: indianred;
+    color:indianred;
     -webkit-transition: color 200ms linear;
     -ms-transition: color 200ms linear;
     transition: color 200ms linear;
 }
-

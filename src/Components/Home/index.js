@@ -11,26 +11,17 @@ const Home = () => {
     return (
         <>
         <m.div variants={homeAnimation} initial="hidden" animate="show" exit='exit' className='comp-container' id="/">
-
                 <div className='home-content'>
                     <m.img variants={fadeIn} src={profile} alt="mattzteh"></m.img>
                     <div className='home-hero'>
-                        <div className='h-overflow'>
-                            <m.h1 variants={fadeUp}>Matthew Teh</m.h1>
-                        </div>
-                        <div className='h-overflow'>
-                            <m.h2 variants={fadeUp}>Fullstack Software Engineer</m.h2>
-                        </div>
+                        <div className='h-overflow'><m.h1 variants={fadeUp}>Matthew Teh</m.h1></div>
+                        <div className='h-overflow'><m.h2 variants={fadeUp}>Fullstack Software Engineer</m.h2></div>
                     </div>
                 </div>
         </m.div>
 
-        <div id="/about">
-            <About />
-        </div>
-        <div id="/projects">
-            <ProjectsIndex />
-        </div>
+        <div id="/about"><About /></div>
+        <div id="/projects"><ProjectsIndex /></div>
         </>
     )
 }
