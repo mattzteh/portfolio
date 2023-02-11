@@ -1,5 +1,5 @@
 import Project from './project';
-import projectsData from '../../util/projects.js';
+import projectsData from '../../assets/projects.js';
 
 const ProjectsIndex = () => {
 
