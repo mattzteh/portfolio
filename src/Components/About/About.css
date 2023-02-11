@@ -9,22 +9,22 @@
     line-height: 30px;
 }
 
-.about-content * {
+.about-content p {
     max-width: 50ch;
     font-size: 16px;
-}
-
-.about-content p {
     margin-bottom: 15px;
 }
 
-.about-content img {
-    max-height: 300px; width: auto;
-    border-radius: 3px;
-    margin: 10px 10px;
+.about-content a {
+    font-size: 1.1rem;
+    border-bottom: 1px solid grey;
 }
 
-@media (max-width: 700px) {
+.about-content a:hover {
+    font-style: italic;
+}
+
+@media (max-width: 920px) {
     .about {
         display: block;
         text-align: center;
@@ -33,7 +33,7 @@
         display: block;
         text-align: center;
         margin: 0px 25px;
-        max-width: 25ch;
+        max-width: 40ch;
     }
 
     .about-content img {
