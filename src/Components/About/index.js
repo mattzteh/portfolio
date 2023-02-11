@@ -1,5 +1,6 @@
 import './About.css';
 import { aboutText } from '../../assets/text';
+import { skills } from '../../assets/skills';
 
 import { useEffect } from 'react';
 import { motion as m, useAnimation } from 'framer-motion';
@@ -22,14 +23,15 @@ const About = () => {
     <>
     <div className="comp-container">
 		<m.div ref={ref} animate={animation} className='about'>
-    		<h1>Welcome to my Website!</h1>
         	<div className='about-content'>
           		<div className='about-text'>
+    				<h1>Welcome to my Website!</h1>
 					<p>{aboutText[0]}</p>
 					<p>{aboutText[1]}</p>
 					<p>{aboutText[2]}</p>
-					<p><a href='mailto: mattzteh@gmail.com'>Hire me!</a></p>
           		</div>
+
+				<div className='skills'>{skills}</div>
         	</div>
       	</m.div>
     </div>

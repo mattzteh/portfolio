@@ -36,7 +36,7 @@ const NavBar = () => {
                 
             <div className='links'>
                 <m.div variants={fadeUp} className='link'>
-                    <Link to="/about" spy={true} smooth={true} offset={50} duration={200}>
+                    <Link to="/about" spy={true} smooth={true} offset={-100} duration={200}>
                         <nav>About</nav>
                     </Link> 
                 </m.div>
