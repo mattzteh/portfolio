@@ -3,13 +3,13 @@ export const navBarAnimation = {
     show: { 
         opacity: 1,
         transition: {
-            delayChildren: 0.5,
+            delayChildren: 0.2,
             staggerChildren: 0.2,
         }
     },
     exit: {
         transition: {
-            delayChildren: 0.5,
+            delayChildren: 0.2,
             staggerChildren: 0.2,
         }
     }
@@ -20,13 +20,13 @@ export const homeAnimation = {
     show: { 
         opacity: 1,
         transition: {
-            delayChildren: 1.5,
+            delayChildren: 1,
             staggerChildren: 0.1,
         }
     },
     exit: {
         transition: {
-            delayChildren: 1.5,
+            delayChildren: 1,
             staggerChildren: 0.1,
         }
     }
@@ -37,7 +37,7 @@ export const footerAnimation = {
     show: { 
         opacity: 1,
         transition: {
-            delayChildren: 2,
+            delayChildren: 1.5,
             staggerChildren: 0.2,
         }
     },

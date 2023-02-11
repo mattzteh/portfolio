@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './Project.css';
 
 const Project = ({project}) => {

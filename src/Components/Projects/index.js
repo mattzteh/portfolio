@@ -1,9 +1,6 @@
 import Project from './project';
 import projectsData from '../../util/projects.js';
 
-import { motion as m } from 'framer-motion';
-import { container, fadeIn } from '../../util/animations';
-
 const ProjectsIndex = () => {
 
     return (

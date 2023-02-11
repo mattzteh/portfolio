@@ -2,27 +2,37 @@ import './About.css';
 import aboutPic from '../../assets/aboutPic.jpg';
 import { aboutText } from '../../assets/text';
 
+import { useEffect } from 'react';
 import { motion as m, useAnimation } from 'framer-motion';
-
+import { useInView } from 'react-intersection-observer';
 
 const About = () => {
-  
-  return (
+
+	const animation = useAnimation();
+	const {ref, inView} = useInView({threshold: 0.2});
+
+	useEffect(() => {
+		if (inView) {
+			animation.start({opacity: 1, transition: {delay: 0.2}})
+		} else {
+			animation.start({opacity: 0, transition: {delay: 0.2}})
+		}
+	}, [inView, animation]);
+
+	return (
     <>
     <div className="comp-container">
-		<div className='about'>
-    		<m.h1>About Me </m.h1>
+		<m.div ref={ref} animate={animation} className='about'>
+    		<h1>About Me </h1>
         	<div className='about-content'>
           		<div className='about-text'>
-					<m.p>{aboutText[0]}</m.p>
-					<m.p>{aboutText[1]}</m.p>
-					<m.p>{aboutText[2]}</m.p>
+					<p>{aboutText[0]}</p>
+					<p>{aboutText[1]}</p>
+					<p>{aboutText[2]}</p>
           		</div>
-          		<m.img src={aboutPic} alt="matthew" />
+          		<img src={aboutPic} alt="matthew" />
         	</div>  
-      </div>
-
-
+      	</m.div>
     </div>
     </>
     )

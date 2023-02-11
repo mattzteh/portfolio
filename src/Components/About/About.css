@@ -1,5 +1,5 @@
 .about h1 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
     margin-bottom: 30px;
 }
@@ -11,7 +11,7 @@
 
 .about-content * {
     max-width: 50ch;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .about-content p {
@@ -19,13 +19,9 @@
 }
 
 .about-content img {
-    max-height: 250px; width: auto;
+    max-height: 300px; width: auto;
     border-radius: 3px;
     margin: 10px 10px;
-}
-
-.about-content ul {
-    columns: 2; -webkit-columns: 2; -moz-columns: 2;
 }
 
 @media (max-width: 700px) {
