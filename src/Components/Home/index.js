@@ -10,7 +10,7 @@ const Home = () => {
 
     return (
         <>
-        <m.div variants={homeAnimation} initial="hidden" animate="show" exit='exit' className='comp-container' id="/">
+        <m.div variants={homeAnimation} initial="hidden" animate="show" className='comp-container' id="/">
                 <div className='home-content'>
                     <m.img variants={fadeIn} src={profile} alt="mattzteh"></m.img>
                     <div className='home-hero'>
