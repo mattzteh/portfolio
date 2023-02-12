@@ -3,7 +3,7 @@ import { aboutText } from '../../assets/text';
 import { skills } from '../../assets/skills';
 
 import { motion as m } from 'framer-motion';
-import { fadeIn } from '../../util/animations';
+import { fadeIn, fadeUp } from '../../util/animations';
 
 const About = () => {
 
@@ -25,7 +25,10 @@ const About = () => {
 					<m.p variants={fadeIn}>{aboutText[2]}</m.p>
 					<m.p variants={fadeIn}>{aboutText[3]}</m.p>
           		</div>
-				<div className='skills'>{skills}</div>
+
+				<div className='h-overflow'>
+					<m.div variants={fadeUp} className='skills'>{skills}</m.div>
+				</div>
         	</div>
       	</m.div>
     </div>
