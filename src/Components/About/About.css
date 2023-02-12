@@ -6,10 +6,10 @@
 
 .about-content {
     display: block;
-    line-height: 30px;
 }
 
-.about-content p {
+.about p {
+    line-height: 30px;
     max-width: 50ch;
     font-size: 16px;
     margin-bottom: 15px;
@@ -28,6 +28,7 @@
 .skills li {
     display: flex;
     align-items: center;
+    line-height: 30px;
 }
 
 .skills i {
