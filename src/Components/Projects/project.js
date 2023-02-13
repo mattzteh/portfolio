@@ -1,11 +1,15 @@
 import './Project.css';
 
+import { motion as m } from 'framer-motion';
+import { fadeIn } from '../../util/animations';
+
 const Project = ({project}) => {
 
 
     return (
         <>
-        <div className='project'>
+        <m.div variants={fadeIn} className='project'>
+
             <div className='project-title'>{project.title}</div>
                 {
                     // isHovered &&
@@ -20,8 +24,7 @@ const Project = ({project}) => {
                 }
 
 
-        </div>
-
+        </m.div>
         </>
     )
 }

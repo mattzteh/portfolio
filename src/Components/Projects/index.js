@@ -1,17 +1,26 @@
 import Project from './project';
 import projectsData from '../../assets/projects.js';
 
+import { motion as m } from 'framer-motion';
+import { fadeIn } from '../../util/animations';
+
 const ProjectsIndex = () => {
 
     return (
         <>
         <div className='comp-container'>
-            <div className='projects'>
-                <h1 className='projects-header'>My Projects</h1>
+            <m.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{once:false}}
+            transition={{staggerChildren:0.2}}
+            className='projects'>
+
+                <m.h1 variants={fadeIn} className='projects-header'>My Projects</m.h1>
                 <div className='projects-container'>
                         {projectsData.map(project => <div key={project.id}><Project project={project}/></div>)}
                 </div>
-            </div>
+            </m.div>
         </div>
         </>
     )

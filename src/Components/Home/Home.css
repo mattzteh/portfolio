@@ -3,7 +3,7 @@
     place-items: center;
     position: relative;
     color: grey; 
-    min-height: 90vh;
+    min-height: 100vh;
 }
 
 .h-overflow {
