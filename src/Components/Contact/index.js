@@ -14,6 +14,7 @@ const Contact = () => {
             viewport={{ once: false, amount: 0.2 }}
             transition={{ delayChildren: 0.1, staggerChildren: 0.2 }}
             className='contact'>
+                
                 <div className='contact-header'>
                     <m.h1 variants={fadeIn}>Like my Work?</m.h1>
                     <m.h2 variants={fadeIn}>Let's talk.</m.h2>
