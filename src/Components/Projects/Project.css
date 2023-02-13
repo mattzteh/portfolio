@@ -46,7 +46,7 @@
     font-size: 1.5rem;
 }
 
-.project-links i:hover {
+#git-link:hover {
     color: indianred;
     -webkit-transition: color 200ms linear;
     -ms-transition: color 200ms linear;

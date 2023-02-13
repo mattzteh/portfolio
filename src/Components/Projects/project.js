@@ -8,22 +8,22 @@ const Project = ({project}) => {
 
     return (
         <>
-        <m.div variants={fadeIn} className='project'>
+        <a href={project.live} target="_blank" rel="noreferrer">
+            <m.div variants={fadeIn} className='project'>
 
-            <div className='project-links'>
-                <a href={project.live} target="_blank" rel="noreferrer">{project.icon}</a>
-                <a href={project.github} target="_blank" rel="noreferrer"><i className="fa-brands fa-github"></i></a>
-            </div>
-            <div className='project-title'>{project.title}</div>
-            <div className='project-description'>{project.description}</div>
-            <div className='project-stack'>
-                {
-                    project.stack.map(el => <div>{el}</div>)
-                }
+                <div className='project-links'>
+                    <div>{project.icon}</div>
+                    <a href={project.github} target="_blank" rel="noreferrer"><i className="fa-brands fa-github" id="git-link"></i></a>
                 </div>
-
-
-        </m.div>
+                <div className='project-title'>{project.title}</div>
+                <div className='project-description'>{project.description}</div>
+                <div className='project-stack'>
+                    {
+                        project.stack.map(el => <div>{el}</div>)
+                    }
+                    </div>
+            </m.div>
+        </a>
         </>
     )
 }
