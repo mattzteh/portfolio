@@ -12,7 +12,7 @@ const ProjectsIndex = () => {
             <m.div
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{ delayChildren: 0.2, staggerChildren: 0.2 }}
             className='projects'>
 

@@ -1,0 +1,50 @@
+.contact-header {
+    display: block;
+    text-align: center;
+}
+
+.contact-header > * {
+    margin: 25px 0px;
+}
+
+.contact-header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.contact-header h2 {
+    font-size: 1.2rem;
+}
+
+.contact-content {
+    max-width: 50ch;
+    text-align: center;
+    line-height: 30px;
+}
+
+.contact-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.contact-buttons a {
+    padding: 15px 30px;
+    border: 1px solid indianred;
+    color: indianred;
+    border-radius: 3px;
+    margin: 15px;
+}
+
+.contact-buttons a:hover {
+    background-color: indianred;
+    color: whitesmoke;
+    -webkit-transition: color 200ms linear;
+    -ms-transition: color 200ms linear;
+    transition: color 200ms linear;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+

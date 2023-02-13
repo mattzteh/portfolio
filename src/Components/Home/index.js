@@ -5,6 +5,7 @@ import ProjectsIndex from '../Projects';
 
 import { motion as m } from 'framer-motion';
 import { homeAnimation, fadeIn, fadeUp } from '../../util/animations';
+import Contact from '../Contact';
 
 const Home = () => {
 
@@ -22,6 +23,7 @@ const Home = () => {
 
         <div id="/about"><About /></div>
         <div id="/projects"><ProjectsIndex /></div>
+        <div id="/contact"><Contact /></div>
         </>
     )
 }
