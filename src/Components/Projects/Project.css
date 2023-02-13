@@ -10,29 +10,26 @@
 }
 
 .projects-container {
-    display: flex;
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
     margin: 60px 15px;
 }
 
-
 .project {
     display: block;
-    justify-content: center;
-    align-items: center;
     text-align: left;
     position: relative;
     width: 324px; height: 305px;
     background-color: #191919;
+    border-radius: 3px;
     margin: 20px 7px;
     float: left;
-    transition: margin 0.3s ease-out;
-    -webkit-transition: margin 0.3s ease-out;
-    -moz-transition: margin 0.3s ease-out;
-    -o-transition: margin 0.3s ease-out;
+    top: 0;
+    transition: 0.2s ease;
 }
 
 .project:hover {
-    margin-top: 10px;
+    top: -10px;
 }
 
 .project:hover .project-title {
