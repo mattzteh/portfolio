@@ -12,7 +12,7 @@ const Project = ({project}) => {
 
             <div className='project-links'>
                 <a href={project.live} target="_blank" rel="noreferrer">{project.icon}</a>
-                <a href={project.github} target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+                <a href={project.github} target="_blank" rel="noreferrer"><i className="fa-brands fa-github"></i></a>
             </div>
             <div className='project-title'>{project.title}</div>
             <div className='project-description'>{project.description}</div>

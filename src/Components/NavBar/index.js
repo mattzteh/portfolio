@@ -8,14 +8,6 @@ import { Link } from 'react-scroll';
 
 const NavBar = () => {
 
-    let navMobile;
-
-    if (window.innerHeight < 900) {
-        navMobile = navMobile
-    } else {
-        navMobile = '';
-    }
-
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [isVisible, setIsVisible] = useState(true);
   
@@ -39,7 +31,7 @@ const NavBar = () => {
             <m.div className='home-link'>
                 <m.div variants={fadeUp} className='link'>
                     <Link to="/" spy={true} smooth={true} offset={-100} duration={200}>
-                        <nav><i class="fa-solid fa-m"></i><i class="fa-solid fa-t"></i></nav>
+                        <nav><i className="fa-solid fa-m"></i><i className="fa-solid fa-t"></i></nav>
                     </Link>
                 </m.div>
             </m.div>
