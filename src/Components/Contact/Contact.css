@@ -49,3 +49,13 @@
     transition: background-color 200ms linear;
 }
 
+@media (max-width: 900px) {
+    .contact {
+        display: block;
+    }
+
+    .contact-content {
+        margin:  0px 25px;
+    }
+}
+

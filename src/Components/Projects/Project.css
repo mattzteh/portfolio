@@ -1,12 +1,12 @@
 .projects {
-    margin: 50px 50px;
+    margin: 0px 50px;
 }
 
 .projects h1 {
     text-align: center;
     font-size: 1.7rem;
     font-weight: bold;
-    margin-bottom: -13px;
+    margin-top: 50px;
 }
 
 .projects-container {
@@ -81,6 +81,12 @@
 @media (max-width: 1200px) {
     .projects-container {
         display: block;
-        text-align: center;
+    }
+    .projects {
+        margin: 0 auto;
+    }
+    .project {
+        width: 250px; height: 300px;
+        align-self: center;
     }
 }
