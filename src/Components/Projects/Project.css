@@ -16,13 +16,14 @@
 
 
 .project {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
+    text-align: left;
+    position: relative;
     width: 324px; height: 305px;
     background-color: #191919;
-    margin: 20px 5px;
-    padding: 3px;
+    margin: 20px 7px;
     float: left;
     transition: margin 0.3s ease-out;
     -webkit-transition: margin 0.3s ease-out;
@@ -31,22 +32,53 @@
 }
 
 .project:hover {
-    margin-top: 13px;
+    margin-top: 10px;
 }
 
-.project-title {
-    font-size: 1.5rem;
-}
-
-.project-info {
-    display: block;
-    padding: 15px;
-    height: 100%;
+.project:hover .project-title {
+    color: whitesmoke;
+    -webkit-transition: color 200ms linear;
+    -ms-transition: color 200ms linear;
+    transition: color 200ms linear;
 }
 
 .project-links {
     display: flex;
     justify-content: space-between;
+    padding: 10% 9%;
+    font-size: 1.5rem;
+}
+
+.project-links i:hover {
+    color: indianred;
+    -webkit-transition: color 200ms linear;
+    -ms-transition: color 200ms linear;
+    transition: color 200ms linear;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 30%; left: 9%;
+}
+
+.project-description {
+    position: absolute;
+    top: 40%; left: 9%;
+    max-width: 81%;
+    line-height: 20px;
+}
+
+
+.project-stack {
+    display: flex;
+    position: absolute;
+    bottom: 10%; left: 9%;
+}
+
+.project-stack div {
+    margin-right: 15px;
 }
 
 @media (max-width: 1200px) {
