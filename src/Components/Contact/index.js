@@ -1,33 +1,41 @@
 import './Contact.css';
 
+import { motion as m } from 'framer-motion';
+import { fadeIn } from '../../util/animations';
+
 const Contact = () => {
 
-    const resumeLink = 'https://drive.google.com/file/d/1YXNPYCfwiUlQy1EcMcwDN6Smu8bcvXYT/view?usp=sharing'
+    const resumeLink = 'https://drive.google.com/file/d/1YXNPYCfwiUlQy1EcMcwDN6Smu8bcvXYT/view?usp=sharing';
 
     return (
         <>
         <div className='comp-container'>
-            <div className='contact'>
+            <m.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{ delayChildren: 0.1, staggerChildren: 0.2 }}
+            className='contact'>
 
                 <div className='contact-header'>
-                    <h1>Like my Work?</h1>
-                    <h2>Let's talk.</h2>
+                    <m.h1 variants={fadeIn}>Like my Work?</m.h1>
+                    <m.h2 variants={fadeIn}>Let's talk.</m.h2>
                 </div>
 
                 <div className='contact-content'>
-                    <p>
+                    <m.p variants={fadeIn}>
                         I am currently open to any full-time, part-time, or freelance roles.
                         If you would like to discuss future opportunities with me, or
                         even just to talk and network, feel free to send me an email, or connect
                         with me on LinkedIn. I look forward to hearing from you!
-                    </p>
+                    </m.p>
                 </div>
 
                 <div className='contact-buttons'>
-                    <a href={resumeLink} target="_blank" rel="noreferrer">Resume</a>
-                    <a href='mailto: mattzteh@gmail.com'>Email Me</a>
+                    <m.a variants={fadeIn} href={resumeLink} target="_blank" rel="noreferrer">Resume</m.a>
+                    <m.a variants={fadeIn} href='mailto: mattzteh@gmail.com'>Email Me</m.a>
                 </div>
-            </div>
+            </m.div>
         </div>
         </>
     )
