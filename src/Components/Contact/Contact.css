@@ -41,6 +41,11 @@
     border-radius: 3px;
 }
 
+.contact-buttons input:hover {
+    background-color: indianred;
+    color: whitesmoke;
+}
+
 @media (max-width: 900px) {
     .contact {
         display: block;
