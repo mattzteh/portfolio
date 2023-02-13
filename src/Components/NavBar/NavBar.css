@@ -32,3 +32,9 @@
     -ms-transition: color 200ms linear;
     transition: color 200ms linear;
 }
+
+@media (max-width: 300px) {
+    .link nav {
+        font-size: 0.7rem;
+    }
+}

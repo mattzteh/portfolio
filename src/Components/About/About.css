@@ -52,3 +52,9 @@
         height: 150px; width: auto;
     }
 }
+
+@media (max-width: 300px) {
+    .about * {
+        font-size: 0.7rem;
+    }
+}

@@ -26,36 +26,42 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 30px;
-    overflow: hidden;
+    margin-top: 20px;
 }
 
-.contact-buttons a {
-    padding: 15px 30px;
-    border: 1px solid indianred;
+.contact-buttons form {
+    margin: 15px 15px;
+}
+
+.contact-buttons input {
+    padding: 10px 30px;
     color: indianred;
+    background-color: transparent;
+    border: 1px solid indianred;
     border-radius: 3px;
-    margin: 15px;
-}
-
-.contact-buttons a:hover {
-    background-color: indianred;
-    color: whitesmoke;
-    -webkit-transition: color 200ms linear;
-    -ms-transition: color 200ms linear;
-    transition: color 200ms linear;
-    -webkit-transition: background-color 200ms linear;
-    -ms-transition: background-color 200ms linear;
-    transition: background-color 200ms linear;
 }
 
 @media (max-width: 900px) {
     .contact {
         display: block;
     }
+}
 
-    .contact-content {
-        margin:  0px 25px;
+@media (max-width: 300px) {
+    .contact {
+        font-size: 0.7rem;
+        max-width: 40ch;
+        margin: 0 25px;
+    }
+    .contact-header h1 {
+        font-size: 1.5rem;
+    }
+    .contact-header h2 {
+        font-size: 1.2rem;
+    }
+    .contact-buttons {
+        display: block;
+        text-align: center;
     }
 }
 

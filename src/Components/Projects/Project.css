@@ -90,3 +90,10 @@
         align-self: center;
     }
 }
+
+@media (max-width: 300px) {
+    .project {
+        width: 200px; height: 250px;
+        font-size: 0.8rem;
+    }
+}
