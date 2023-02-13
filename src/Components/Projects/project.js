@@ -11,7 +11,7 @@ const Project = ({project}) => {
         <m.div variants={fadeIn} className='project'>
 
             <div className='project-links'>
-                <a href={project.live} target="_blank" rel="noreferrer"><i class="fa-regular fa-window-maximize"></i></a>
+                <a href={project.live} target="_blank" rel="noreferrer">{project.icon}</a>
                 <a href={project.github} target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
             </div>
             <div className='project-title'>{project.title}</div>

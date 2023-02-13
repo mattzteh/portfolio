@@ -13,8 +13,8 @@ const About = () => {
 		<m.div
 		initial="hidden"
 		whileInView="show"
-		viewport={{once:true}}
-		transition={{staggerChildren:0.2}}
+		viewport={{ once:true, amount: 0.2 }}
+		transition={{ delayChildren: 0.1, staggerChildren:0.2 }}
 		className='about'>
 
         	<div className='about-content'>
