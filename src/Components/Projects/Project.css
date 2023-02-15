@@ -32,11 +32,11 @@
 }
 
 .project:hover {
-    top: -10px;
+    top: -7px;
 }
 
 .project:hover .project-title {
-    color: whitesmoke;
+    color: indianred;
     -webkit-transition: color 200ms linear;
     -ms-transition: color 200ms linear;
     transition: color 200ms linear;
@@ -57,6 +57,7 @@
 }
 
 .project-title {
+    color: lightgrey;
     font-size: 1.2rem;
     font-weight: bold;
     position: absolute;
@@ -67,14 +68,14 @@
     position: absolute;
     top: 40%; left: 9%;
     max-width: 81%;
-    line-height: 20px;
+    line-height: 25px;
 }
-
 
 .project-stack {
     display: flex;
     position: absolute;
     bottom: 10%; left: 9%;
+    color: #606060;
 }
 
 .project-stack div {

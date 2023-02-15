@@ -13,17 +13,17 @@ const About = () => {
 		<m.div
 		initial="hidden"
 		whileInView="show"
-		viewport={{ once: true, amount: 0.2 }}
+		viewport={{ once: true, amount: 0.5 }}
 		transition={{ delayChildren: 0.1, staggerChildren: 0.2 }}
 		className='about'>
 
         	<div className='about-content'>
           		<div className='about-text'>
     				<m.h1 variants={fadeIn}>About Me</m.h1>
-					<m.p variants={fadeIn}>{aboutText[0]}</m.p>
-					<m.p variants={fadeIn}>{aboutText[1]}</m.p>
-					<m.p variants={fadeIn}>{aboutText[2]}</m.p>
-					<m.p variants={fadeIn}>{aboutText[3]}</m.p>
+					{aboutText[0]}
+					{aboutText[1]}
+					{aboutText[2]}
+					{aboutText[3]}
           		</div>
 
 				<div className='h-overflow'>

@@ -22,6 +22,11 @@
     line-height: 30px;
 }
 
+.contact-content span {
+    font-weight: bold;
+    color: indianred;
+}
+
 .contact-buttons {
     display: flex;
     align-items: center;

@@ -2,7 +2,7 @@
     display: grid;
     place-items: center;
     position: relative;
-    min-height: 95vh;
+    min-height: 90vh;
     color: lightgrey;
 }
 

@@ -20,7 +20,7 @@ const Contact = () => {
                     <m.h2 variants={fadeIn}>Let's talk.</m.h2>
                 </div>
 
-                <div className='contact-content'><m.p variants={fadeIn}>{contactP1}</m.p></div>
+                <div className='contact-content'>{contactP1}</div>
 
                 <div className='contact-buttons'>
 
