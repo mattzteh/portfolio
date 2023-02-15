@@ -30,6 +30,7 @@ const About = () => {
 					<m.div variants={fadeUp} className='skills'>{skills}</m.div>
 				</div>
         	</div>
+			
       	</m.div>
     </div>
     </>

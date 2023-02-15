@@ -6,8 +6,12 @@ import { footerAnimation, fadeIn, fadeUp } from '../../util/animations';
 const Footer = () => {
     return (
         <>
-        <div className='footer'>
-            <m.ul variants={footerAnimation} initial="hidden" animate="show" className='footer-links'>
+        <div className='footer-container'>
+            <m.ul
+            variants={footerAnimation}
+            initial="hidden"
+            animate="show"
+            className='footer'>
 
                 <m.li variants={fadeIn} className="socials">
                     <a href='https://github.com/mattzteh' target="_blank" rel="noreferrer">

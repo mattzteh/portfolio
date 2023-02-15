@@ -24,7 +24,12 @@ const NavBar = () => {
 
     return (
         <>
-        <m.nav variants={navBarAnimation} initial="hidden" animate="show" className='navbar' style={{top: isVisible ? '0' : '-60px'}}>
+        <m.nav
+        variants={navBarAnimation}
+        initial="hidden"
+        animate="show"
+        style={{top: isVisible ? '0' : '-60px'}}
+        className='navbar'>
 
             <m.div className='home-link'>
                 <m.div variants={fadeUp} className='link'>

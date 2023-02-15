@@ -11,7 +11,13 @@ const Home = () => {
 
     return (
         <>
-        <m.div variants={homeAnimation} initial="hidden" animate="show" className='comp-container' id="/">
+        <m.div
+        variants={homeAnimation}
+        initial="hidden"
+        animate="show"
+        className='comp-container'
+        id="/">
+
                 <div className='home-content'>
                     <m.img variants={fadeIn} src={profile} alt="mattzteh"></m.img>
                     <div className='home-hero'>
@@ -19,6 +25,7 @@ const Home = () => {
                         <div className='h-overflow'><m.h2 variants={fadeUp}>Fullstack Software Engineer</m.h2></div>
                     </div>
                 </div>
+                
         </m.div>
 
         <div id="/about"><About /></div>
