@@ -14,8 +14,13 @@
     position: relative;
     top: 0;
     font-size: 20px;
-    margin: 13px 0px;
-    transition: ease 200ms;
+    transition: 0.3s ease;
+    padding: 13px 0px;
+}
+
+.socials i:hover {
+    top: -3px;
+    color: indianred;
 }
 
 .vl {
@@ -24,16 +29,8 @@
     margin-top: 20px;
 }
 
-.socials i:hover {
-    color: indianred;
-    top: -3px;
-    -webkit-transition: color 200ms linear;
-    -ms-transition: color 200ms linear;
-    transition: color 200ms linear;
-}
-
-@media (max-width: 900px) {
-    .footer {
+@media (max-width: 700px) {
+    .footer-container {
         display: none;
     }
 }
