@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import NavBar from "./Components/NavBar";
 import AnimatedRoutes from './Components/AnimatedRoutes';
 import Footer from './Components/Footer';
+import Email from './Components/Footer/email';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <NavBar />
         <AnimatedRoutes />
         <Footer />
+        <Email />
       </Router>
     </>
   );

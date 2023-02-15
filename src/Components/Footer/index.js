@@ -37,12 +37,6 @@ const Footer = () => {
                     </a>
                 </m.li>
 
-                <m.li variants={fadeIn} className="socials">
-                    <a href='mailto: mattzteh@gmail.com'>
-                        <i className="fa-regular fa-envelope"></i>
-                    </a>
-                </m.li>
-
                 <m.li variants={fadeUp} className='vl'></m.li>
             </m.ul>
         </div>

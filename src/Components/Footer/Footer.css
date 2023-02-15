@@ -30,7 +30,7 @@
 }
 
 @media (max-width: 700px) {
-    .footer-container {
+    .footer-container, .email-container {
         display: none;
     }
 }

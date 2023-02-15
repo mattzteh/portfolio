@@ -1,0 +1,39 @@
+.email-container {
+    position: fixed;
+    bottom: 0; right: 0;
+    margin: 0 2%;
+}
+
+.email-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email-link {
+    position: relative;
+    top: 0;
+    font-size: 15px;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
+    padding: 13px 0px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.email-link:hover {
+    top: -6px;
+}
+
+.email-link a:hover {
+    color: indianred;
+    -webkit-transition: color 300ms linear;
+    -ms-transition: color 300ms linear;
+    transition: color 300ms linear;
+}
+
+.email-vl {
+    border-left: 1px solid indianred;
+    min-height: 70px;
+    margin-top: 20px; 
+}
