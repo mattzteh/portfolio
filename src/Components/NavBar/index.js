@@ -42,7 +42,7 @@ const NavBar = () => {
                 </m.div>
 
                 <m.div variants={fadeUp} className='link'>
-                    <Link to="/projects" spy={true} smooth={true} offset={50} duration={200}>
+                    <Link to="/projects" spy={true} smooth={true} offset={-65} duration={200}>
                         <nav>Projects</nav>
                     </Link>
                 </m.div>

@@ -19,7 +19,7 @@ const About = () => {
 
         	<div className='about-content'>
           		<div className='about-text'>
-    				<m.h1 variants={fadeIn}>Welcome to my Website!</m.h1>
+    				<m.h1 variants={fadeIn}>About Me</m.h1>
 					<m.p variants={fadeIn}>{aboutText[0]}</m.p>
 					<m.p variants={fadeIn}>{aboutText[1]}</m.p>
 					<m.p variants={fadeIn}>{aboutText[2]}</m.p>

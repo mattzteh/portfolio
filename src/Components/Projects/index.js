@@ -8,20 +8,18 @@ const ProjectsIndex = () => {
 
     return (
         <>
-        <div className='comp-container'>
-            <m.div
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ delayChildren: 0.2, staggerChildren: 0.2 }}
-            className='projects'>
+        <m.div
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ delayChildren: 0.2, staggerChildren: 0.2 }}
+        className='projects'>
 
-                <m.h1 variants={fadeIn} className='projects-header'>My Projects</m.h1>
-                <div className='projects-container'>
-                    {projectsData.map(project => <div key={project.id}><Project project={project}/></div>)}
-                </div>
-            </m.div>
-        </div>
+            <m.h1 variants={fadeIn} className='projects-header'>My Projects</m.h1>
+            <div className='projects-container'>
+                {projectsData.map(project => <div key={project.id}><Project project={project}/></div>)}
+            </div>
+        </m.div>
         </>
     )
 }

@@ -1,4 +1,6 @@
 .projects {
+    display: grid;
+    place-items: center;
     margin: 0px 50px;
 }
 
@@ -7,6 +9,7 @@
     font-size: 1.7rem;
     font-weight: bold;
     margin-top: 50px;
+    color: lightgrey;
 }
 
 .projects-container {

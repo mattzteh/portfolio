@@ -2,8 +2,8 @@
     display: grid;
     place-items: center;
     position: relative;
-    color: grey; 
-    min-height: 100vh;
+    min-height: 95vh;
+    color: lightgrey;
 }
 
 .h-overflow {
@@ -31,6 +31,7 @@
 
 .home-hero h1 {
     font-size: 70px;
+    color: whitesmoke;
 }
 
 .home-hero h2 {
