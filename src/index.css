@@ -58,28 +58,32 @@ html {
 	user-select: none;
 }
 
+.comp-container {
+    display: grid;
+    place-items: center;
+    position: relative;
+    min-height: 100vh;
+    color: lightgrey;
+}
+
 a {
 	text-decoration: none;
 	color: grey;
 }
 
-/* width */
 ::-webkit-scrollbar {
 	width: 7px;
 }
-  
-  /* Track */
+
 ::-webkit-scrollbar-track {
 	background: transparent;
 }
-  
-  /* Handle */
+
 ::-webkit-scrollbar-thumb {
 	background: #888;
 	border-radius: 10px;
 }
-  
-  /* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
 	background: #555;
 }

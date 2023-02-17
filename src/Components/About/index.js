@@ -1,9 +1,9 @@
 import './About.css';
 import { aboutText } from '../../assets/text';
-import { skills } from '../../assets/skills';
+import profile from '../../assets/profile.jpg';
 
 import { motion as m } from 'framer-motion';
-import { fadeIn, fadeUp } from '../../util/animations';
+import { fadeIn } from '../../util/animations';
 
 const About = () => {
 
@@ -23,14 +23,10 @@ const About = () => {
 					{aboutText[0]}
 					{aboutText[1]}
 					{aboutText[2]}
-					{aboutText[3]}
           		</div>
-
-				<div className='h-overflow'>
-					<m.div variants={fadeUp} className='skills'>{skills}</m.div>
-				</div>
+				<m.img variants={fadeIn} src={profile} alt="mattzteh"></m.img>
         	</div>
-			
+
       	</m.div>
     </div>
     </>

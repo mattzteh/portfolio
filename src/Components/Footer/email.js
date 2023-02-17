@@ -1,7 +1,7 @@
 import './Email.css';
 
 import { motion as m } from "framer-motion";
-import { footerAnimation, fadeIn, fadeUp } from "../../util/animations";
+import { fadeIn, fadeUp } from "../../util/animations";
 
 const Email = () => {
     return (
@@ -9,9 +9,10 @@ const Email = () => {
         <div className='email-container'>
 
             <m.div
-            variants={footerAnimation}
             initial="hidden"
-            animate="show"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delayChildren: 2, staggerChildren: 0.4 }}
             className="email-footer">    
 
                 <m.div variants={fadeIn} className="email-link">

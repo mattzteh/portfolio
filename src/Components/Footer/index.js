@@ -1,16 +1,17 @@
 import './Footer.css';
 
 import { motion as m } from 'framer-motion';
-import { footerAnimation, fadeIn, fadeUp } from '../../util/animations';
+import { fadeIn, fadeUp } from '../../util/animations';
 
 const Footer = () => {
     return (
         <>
         <div className='footer-container'>
             <m.ul
-            variants={footerAnimation}
             initial="hidden"
-            animate="show"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delayChildren: 2, staggerChildren: 0.1 }}
             className='footer'>
 
                 <m.li variants={fadeIn} className="socials">

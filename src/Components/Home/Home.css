@@ -1,58 +1,54 @@
-.comp-container {
-    display: grid;
-    place-items: center;
-    position: relative;
+.home-container {
+    display: flex;
+    align-items: center;
+    text-align: left;
     min-height: 90vh;
-    color: lightgrey;
+    margin: 0px 25%;
 }
 
 .h-overflow {
     overflow: hidden;
 }
 
-.home-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.home-content img {
-    max-height: 200px; width: auto;
-    border-radius: 50%;
-}
-
 .home-hero {
     display: block;
-    text-align: center;
-    margin: 0px 45px;
-    overflow: hidden;
-    line-height: 80px;
 }
 
-.home-hero h1 {
-    font-size: 70px;
+.home-container h1 {
+    font-size: 6rem;
     color: whitesmoke;
 }
 
-.home-hero h2 {
-    font-size: 30px;
+.home-container h2 {
+    font-size: 3rem;
+    line-height: 70px;
     color:indianred;
 }
 
+.home-container h3 {
+    font-size: 1rem;
+    color: lightgrey;
+    max-width: 50ch;
+    line-height: 25px;
+}
+
 @media (max-width: 900px) {
-    .home-content {
-        display: block;
-        text-align: center;
+    .home-container {
+        margin: 0px 15%;
     }
     .home-hero {
-        line-height: 30px;
+        line-height: 40px;
         margin: 15px 0px;
     }
     .home-hero h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
     .home-hero h2 {
-        font-size: 15px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .home-hero h3 {
+        font-size: 12px;
     }
 }
 

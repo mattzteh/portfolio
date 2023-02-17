@@ -4,16 +4,16 @@
 }
 
 .contact-header > * {
-    margin: 25px 0px;
+    margin: 15px 0px;
 }
 
 .contact-header h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
 .contact-header h2 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .contact-content {
@@ -22,7 +22,7 @@
     line-height: 30px;
 }
 
-.contact-content span {
+.contact-content span, .contact-content a {
     font-weight: bold;
     color: indianred;
 }
@@ -39,21 +39,40 @@
 }
 
 .contact-buttons input {
-    padding: 10px 30px;
+    font-size: 1.2rem;
+    padding: 15px 45px;
     color: indianred;
     background-color: transparent;
     border: 1px solid indianred;
     border-radius: 3px;
+    transition: 0.3s ease;
 }
 
 .contact-buttons input:hover {
+    border: 1px solid #191919;
     background-color: indianred;
     color: whitesmoke;
+    -webkit-transition: color 300ms;
+    -ms-transition: color 300ms;
+    transition: color 300ms;
+    -webkit-transition: background-color 300ms;
+    -ms-transition: background-color 300ms;
+    transition: background-color 300ms;
+
 }
 
 @media (max-width: 900px) {
     .contact {
         display: block;
+    }
+    .contact-header h1 {
+        font-size: 2rem;
+    }
+    .contact-header h2 {
+        font-size: 1.2rem;
+    }
+    .contact-content {
+        margin: 0px 25px;
     }
 }
 
@@ -62,12 +81,6 @@
         font-size: 0.7rem;
         max-width: 40ch;
         margin: 0 25px;
-    }
-    .contact-header h1 {
-        font-size: 1.5rem;
-    }
-    .contact-header h2 {
-        font-size: 1.2rem;
     }
     .contact-buttons {
         display: block;

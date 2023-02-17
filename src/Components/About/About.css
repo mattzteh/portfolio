@@ -4,8 +4,21 @@
     margin-bottom: 30px;
 }
 
+.about img {
+    max-width: 300px; height: auto;
+    border-radius: 3px;
+    outline: 1px solid indianred;
+    outline-offset: 15px;
+}
+
 .about-content {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content * {
+    margin: 0px 15px;
 }
 
 .about p {
@@ -48,8 +61,9 @@
         max-width: 40ch;
     }
 
-    .about-content img {
+    .about img {
         height: 150px; width: auto;
+        margin: 25px;
     }
 }
 

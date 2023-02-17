@@ -2,7 +2,7 @@ import './NavBar.css';
 
 import { useState, useEffect } from 'react';
 import { motion as m } from 'framer-motion';
-import { navBarAnimation, fadeUp } from '../../util/animations';
+import { fadeUp } from '../../util/animations';
 import { debounce } from '../../util/debounce';
 import { Link } from 'react-scroll';
 
@@ -25,9 +25,10 @@ const NavBar = () => {
     return (
         <>
         <m.nav
-        variants={navBarAnimation}
-        initial="hidden"
-        animate="show"
+		initial="hidden"
+		whileInView="show"
+		viewport={{ once: true }}
+		transition={{ staggerChildren: 0.1 }}
         style={{top: isVisible ? '0' : '-60px'}}
         className='navbar'>
 
@@ -47,7 +48,7 @@ const NavBar = () => {
                 </m.div>
 
                 <m.div variants={fadeUp} className='link'>
-                    <Link to="/projects" spy={true} smooth={true} offset={-65} duration={200}>
+                    <Link to="/projects" spy={true} smooth={true} offset={-75} duration={200}>
                         <nav>Projects</nav>
                     </Link>
                 </m.div>

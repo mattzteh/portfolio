@@ -24,13 +24,14 @@
 .link nav {
     font-size: 1.2rem;
     color: grey;
+    transition: 0.3s;
 }
 
 .link nav:hover, .project-info a:hover {
     color:indianred;
-    -webkit-transition: color 200ms linear;
-    -ms-transition: color 200ms linear;
-    transition: color 200ms linear;
+    -webkit-transition: color 300ms;
+    -ms-transition: color 300ms;
+    transition: color 300ms;
 }
 
 @media (max-width: 300px) {
