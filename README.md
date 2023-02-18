@@ -13,19 +13,21 @@
 	</a>
 </p>
 
+## Dependencies
+
+| npm install...  			| Usage	
+|-----------------			|-----------	
+| framer-motion         		| Animate components (NavBar, Home, About, Projects, & Contact)   	
+| react-router-dom     			| App.js utilized BrowserRouter, Routes, & Route. 	
+| react-scroll       			| Smooth scroll for NavBar to direct to specific div
+| react-intersection-observer 		| Utilized hook to check when component is in viewport, then trigger animation (from Framer Motion)
+
+
+
 <p>
 	Design and layout heavily influenced by
 	<a href="brittanychiang.com" target="_blank" rel="noreferrer">
 	Brittany Chiang's website
 	</a>
 </p>
-
-## Packages
-
-| Package Name    				| Usage	
-|-----------------				|-----------	
-| Framer-Motion         		| Animate components (NavBar, Home, About, Projects, & Contact)   	
-| React-router-dom     			| App.js utilized BrowserRouter, Routes, & Route. 	
-| React-Scroll       			| Smooth scroll for NavBar to direct to specific div
-| React-Intersection-Observer 	| Utilize hook to check when component is in viewport, then trigger animation (from Framer Motion) 
 
