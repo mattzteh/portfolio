@@ -19,7 +19,7 @@ that works on meaningful and impactful projects!</m.p>
 
 export const aboutText = [p1, p2, p3];
 
-export const resumeLink = 'https://drive.google.com/file/d/1NyuJWAkGjfTcYPip14NDAcu_Dmgt6aQB/view?usp=sharing';
+export const resumeLink = 'https://drive.google.com/file/d/1teRYsk7lhHYCHMU80-0VOPWxK3cNLC8g/view?usp=share_link';
 
 export const contactP1 = <m.p variants={fadeIn}>I am currently open to any <span>full-time</span>, <span>part-time</span>, 
 or <span>freelance</span> roles. If you would like to discuss opportunities, or just want to chat, feel free to send me an 
