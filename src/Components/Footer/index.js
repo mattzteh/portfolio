@@ -32,12 +32,6 @@ const Footer = () => {
                     </a>
                 </m.li>
 
-                <m.li variants={fadeIn} className="socials">
-                    <a href='https://www.instagram.com/mattzteh/' target="_blank" rel="noreferrer">
-                        <i className="fa-brands fa-instagram"></i>
-                    </a>
-                </m.li>
-
                 <m.li variants={fadeUp} className='vl'></m.li>
             </m.ul>
         </div>

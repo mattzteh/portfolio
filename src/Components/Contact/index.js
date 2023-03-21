@@ -23,9 +23,7 @@ const Contact = () => {
                 <div className='contact-content'>{contactP1}</div>
 
                 <div className='contact-buttons'>
-                    <m.form variants={fadeIn} action="mailto: mattzteh@gmail.com">
-                        <input type="submit" value="Email Me"/>
-                    </m.form>
+                    <m.a variants={fadeIn}href='mailto: mattzteh@gmail.com'>Email Me</m.a>
                 </div>
             </m.div>
         </div>

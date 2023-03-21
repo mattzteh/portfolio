@@ -38,7 +38,7 @@
     margin: 15px 15px;
 }
 
-.contact-buttons input {
+.contact-buttons a {
     font-size: 1.2rem;
     padding: 15px 45px;
     color: indianred;
@@ -48,7 +48,7 @@
     transition: 0.3s ease;
 }
 
-.contact-buttons input:hover {
+.contact-buttons a:hover {
     border: 1px solid #191919;
     background-color: indianred;
     color: whitesmoke;

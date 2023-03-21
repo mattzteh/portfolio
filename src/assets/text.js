@@ -1,5 +1,5 @@
-import { motion as m } from "framer-motion"
-import { fadeIn } from "../util/animations"
+import { motion as m } from "framer-motion";
+import { fadeIn } from "../util/animations";
 
 export const homeContent = `I'm a Web Developer with experience in JavaScript, React, jQuery, Python, and Ruby on Rails.
 I am currently looking for full time positions as a Software Engineer.`
@@ -19,7 +19,7 @@ that works on meaningful and impactful projects!</m.p>
 
 export const aboutText = [p1, p2, p3];
 
-export const resumeLink = 'https://drive.google.com/file/d/1teRYsk7lhHYCHMU80-0VOPWxK3cNLC8g/view?usp=share_link';
+export const resumeLink = 'https://s3.amazonaws.com/attachments.angel.co/7708341-8612de724f6068cc8cdfd7692de7e2f9.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJS6W3HGZGRJIRBTA%2F20230321%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230321T222901Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=7b501d1a2913fb2bcb36bf31604efb782d74bc7351e27d68dd4043023d554c77';
 
 export const contactP1 = <m.p variants={fadeIn}>I am currently open to any <span>full-time</span>, <span>part-time</span>, 
 or <span>freelance</span> roles. If you would like to discuss opportunities, or just want to chat, feel free to send me an 
