@@ -19,7 +19,7 @@ that works on meaningful and impactful projects!</m.p>
 
 export const aboutText = [p1, p2, p3];
 
-export const resumeLink = 'https://zzyworks-dev.s3.us-west-1.amazonaws.com/Matthew+Teh+Resume.docx.pdf';
+export const resumeLink = 'https://zzyworks-dev.s3.us-west-1.amazonaws.com/matthewtehresume.pdf';
 
 export const contactP1 = <m.p variants={fadeIn}>I am currently open to any <span>full-time</span>, <span>part-time</span>, 
 or <span>freelance</span> roles. If you would like to discuss opportunities, or just want to chat, feel free to send me an 
